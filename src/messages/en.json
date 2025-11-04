@@ -19,6 +19,10 @@
       { "title": "Service-proof stability", "text": "Rails stay put through hard service — no more rattling or mid-rush realignment." },
       { "title": "Hygienic by design", "text": "AISI 304/316 stainless contact surfaces, smooth edges, easy to remove and clean." }
     ],
+    "about": {
+      "title": "Born from a kitchen problem",
+      "body": "In our own restaurant <strong>Fitchen</strong> in Gent, we were tired of GN rails that slipped every service. One night, founder <strong>Koen Mortier</strong> sketched a lockable version on a prep ticket. Together with <strong>Pauline De Schepper</strong>, who runs daily operations, that sketch became <strong>FitGN Rail</strong> — the first system that keeps every Gastronorm tray locked, level, and HACCP-safe."
+    },
     "how": {
       "title": "How it works",
       "steps": [
@@ -35,7 +39,7 @@
       "microcopy": "HACCP-minded · AISI 304/316 · Pilot kitchens in BE/NL"
     },
     "footer": {
-      "line": "Friends of a faster pass: FitGN BV · Vlaanderen 129 · 9000 Gent · Belgium · VAT BE 0707.748.721 · info@fitgn.com · Koen Mortier — Founder · Pauline De Schepper — General Manager"
+      "line": "FitGN BV · Vlaanderenstraat 129 · 9000 Gent · Belgium · VAT BE0707.748.721 · info@fitgn.com"
     }
   }
 }

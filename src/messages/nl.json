@@ -19,6 +19,10 @@
       { "title": "Servicebestendige stabiliteit", "text": "Rails blijven op hun plaats bij intensieve service — geen geratel meer of mid-rush herpositioning." },
       { "title": "Hygiënisch ontwerp", "text": "AISI 304/316 roestvrijstalen contactoppervlakken, gladde randen, makkelijk uit te nemen en schoon te maken." }
     ],
+    "about": {
+      "title": "Ontstaan uit een keukenprobleem",
+      "body": "In ons eigen restaurant <strong>Fitchen</strong> in Gent hadden we genoeg van GN-rails die tijdens de service verschoven. Op een avond tekende oprichter <strong>Koen Mortier</strong> een vergrendelbare versie op een bon. Samen met <strong>Pauline De Schepper</strong>, die de dagelijkse werking leidt, groeide dat idee uit tot <strong>FitGN Rail</strong> — het eerste systeem dat elke Gastronormbak stevig en hygiënisch op z'n plaats houdt."
+    },
     "how": {
       "title": "Hoe het werkt",
       "steps": [
@@ -35,7 +39,7 @@
       "microcopy": "HACCP-gericht · AISI 304/316 · Pilot-keukens in BE/NL"
     },
     "footer": {
-      "line": "Vrienden van een snellere pass: FitGN BV · Vlaanderen 129 · 9000 Gent · België · BTW BE 0707.748.721 · info@fitgn.com · Koen Mortier — Oprichter · Pauline De Schepper — Algemeen directeur"
+      "line": "FitGN BV · Vlaanderenstraat 129 · 9000 Gent · België · BTW BE0707.748.721 · info@fitgn.com"
     }
   }
 }

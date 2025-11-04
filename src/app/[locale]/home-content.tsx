@@ -170,6 +170,19 @@ export default function Home() {
           </div>
         </section>
 
+        {/* About Section */}
+        <section id="about" className="space-y-6">
+          <h2 className="text-3xl font-semibold">{t("about.title")}</h2>
+          <p className="text-base leading-relaxed text-white/70">
+            {t.rich("about.body", {
+              Fitchen: (chunks) => <strong>{chunks}</strong>,
+              Koen: (chunks) => <strong>{chunks}</strong>,
+              Pauline: (chunks) => <strong>{chunks}</strong>,
+              FitGN: (chunks) => <strong>{chunks}</strong>,
+            })}
+          </p>
+        </section>
+
         {/* How It Works Section */}
         <section className="space-y-8">
           <div className="space-y-4">

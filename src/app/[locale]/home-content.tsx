@@ -257,13 +257,17 @@ export default function Home() {
             </div>
           </div>
           <div className="text-sm text-white/60 mt-6 space-y-1">
-            <div>FitGN BV · Vlaanderenstraat 129 · 9000 Gent · Belgium</div>
+            <div>{t("footer.companyLine")}</div>
             <div>
-              VAT: BE0707.748.721 ·{" "}
-              <a href="mailto:info@fitgn.com" className="underline">
-                info@fitgn.com
-              </a>
+              {t.rich("footer.contactLine", {
+                link: (chunks) => (
+                  <a href="mailto:info@fitgn.com" className="underline">
+                    {chunks}
+                  </a>
+                ),
+              })}
             </div>
+            <div>{t("footer.leadershipLine")}</div>
           </div>
         </div>
       </footer>

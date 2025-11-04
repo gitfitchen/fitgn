@@ -52,7 +52,9 @@
       "privacy": "Privacy",
       "terms": "Terms",
       "press": "Press",
-      "companyDetails": "FitGN BV · Vlaanderenstraat 129 · 9000 Gent · Belgium · VAT BE0707.748.721 · <link>info@fitgn.com</link>",
+      "companyLine": "FitGN BV · Vlaanderenstraat 129 · 9000 Gent · Belgium",
+      "contactLine": "VAT BE0707.748.721 · <link>info@fitgn.com</link>",
+      "leadershipLine": "Koen Mortier — Founder · Pauline De Schepper — General Manager",
       "copyright": "© {year} FitGN. All rights reserved."
     }
   }

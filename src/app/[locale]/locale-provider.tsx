@@ -5,7 +5,7 @@ import { MessagesContext } from "@/i18n/use-translations";
 
 type Props = {
   locale: string;
-  messages: Record<string, any>;
+  messages: Record<string, unknown>;
   children: ReactNode;
 };
 

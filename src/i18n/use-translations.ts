@@ -3,12 +3,15 @@
 import { useContext, useMemo, ReactNode } from "react";
 import { createContext } from "react";
 
-type Messages = {
-  [key: string]: any;
-};
+type Messages = Record<string, unknown>;
 
 type RichTranslationValue = {
   [key: string]: (children: string) => ReactNode;
+};
+
+type TranslationFunction = {
+  (key: string, params?: Record<string, unknown>): string;
+  rich: (key: string, components: RichTranslationValue) => ReactNode;
 };
 
 export const MessagesContext = createContext<Messages>({});
@@ -18,17 +21,24 @@ export function useTranslationsDict(): Messages {
   return messages;
 }
 
-export function useT(namespace: string) {
+export function useT(namespace: string): TranslationFunction {
   const messages = useTranslationsDict();
-  const section = messages[namespace] || {};
+  const section = useMemo(() => {
+    const val = messages[namespace];
+    return typeof val === "object" && val !== null ? val : {};
+  }, [messages, namespace]);
 
-  const t = useMemo(
-    () => (key: string, params?: Record<string, any>) => {
+  const t = useMemo((): TranslationFunction => {
+    const baseT = (key: string, params?: Record<string, unknown>): string => {
       const keys = key.split(".");
-      let value: any = section;
+      let value: unknown = section;
 
       for (const k of keys) {
-        value = value?.[k];
+        if (typeof value === "object" && value !== null && k in value) {
+          value = (value as Record<string, unknown>)[k];
+        } else {
+          return key;
+        }
       }
 
       if (typeof value !== "string") {
@@ -43,69 +53,60 @@ export function useT(namespace: string) {
       }
 
       return value;
-    },
-    [section]
-  ) as ((key: string, params?: Record<string, any>) => string) & {
-    rich: (key: string, components: RichTranslationValue) => ReactNode;
-  };
+    };
 
-  t.rich = function (key: string, components: RichTranslationValue) {
-    const keys = key.split(".");
-    let value: any = section;
+    const rich = (key: string, components: RichTranslationValue): ReactNode => {
+      const keys = key.split(".");
+      let value: unknown = section;
 
-    for (const k of keys) {
-      value = value?.[k];
-    }
-
-    if (typeof value !== "string") {
-      return key;
-    }
-
-    // Replace <tag>content</tag> with component calls
-    let result: ReactNode = [];
-    let lastIndex = 0;
-    const regex = /<(\w+)>(.*?)<\/\1>/g;
-    let match;
-
-    while ((match = regex.exec(value)) !== null) {
-      const [fullMatch, componentName, content] = match;
-      const startIndex = match.index;
-
-      // Add text before this match
-      if (startIndex > lastIndex) {
-        result = [
-          ...(Array.isArray(result) ? result : [result]),
-          value.substring(lastIndex, startIndex),
-        ];
+      for (const k of keys) {
+        if (typeof value === "object" && value !== null && k in value) {
+          value = (value as Record<string, unknown>)[k];
+        } else {
+          return key;
+        }
       }
 
-      // Add the component
-      const component = components[componentName];
-      if (component) {
-        result = [
-          ...(Array.isArray(result) ? result : [result]),
-          component(content),
-        ];
-      } else {
-        result = [
-          ...(Array.isArray(result) ? result : [result]),
-          fullMatch,
-        ];
+      if (typeof value !== "string") {
+        return key;
       }
 
-      lastIndex = regex.lastIndex;
-    }
+      // Replace <tag>content</tag> with component calls
+      const result: ReactNode[] = [];
+      let lastIndex = 0;
+      const regex = /<(\w+)>(.*?)<\/\1>/g;
+      let match;
 
-    // Add remaining text
-    if (lastIndex < value.length) {
-      result = [
-        ...(Array.isArray(result) ? result : [result]),
-        value.substring(lastIndex),
-      ];
-    }
+      while ((match = regex.exec(value)) !== null) {
+        const [fullMatch, componentName, content] = match;
+        const startIndex = match.index;
 
-    return result;
-  };
+        // Add text before this match
+        if (startIndex > lastIndex) {
+          result.push(value.substring(lastIndex, startIndex));
+        }
+
+        // Add the component
+        const component = components[componentName];
+        if (component) {
+          result.push(component(content));
+        } else {
+          result.push(fullMatch);
+        }
+
+        lastIndex = regex.lastIndex;
+      }
+
+      // Add remaining text
+      if (lastIndex < value.length) {
+        result.push(value.substring(lastIndex));
+      }
+
+      return result;
+    };
+
+    return Object.assign(baseT, { rich });
+  }, [section]);
 
   return t;
 }

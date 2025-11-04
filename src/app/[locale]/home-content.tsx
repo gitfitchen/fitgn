@@ -4,51 +4,59 @@ import { motion } from "framer-motion";
 import { Inter } from "next/font/google";
 import Image from "next/image";
 import { useRouter, usePathname } from "next/navigation";
-import { useT } from "@/i18n/use-translations";
+import { useT, useTranslationsDict } from "@/i18n/use-translations";
 
 const inter = Inter({
   subsets: ["latin"],
   weight: ["400", "500", "600", "700"],
 });
 
-type StepProps = {
-  number: string;
+type FeatureProps = {
   title: string;
-  description: string;
+  text: string;
 };
 
-function Step({ number, title, description }: StepProps) {
+function Feature({ title, text }: FeatureProps) {
   return (
-    <div className="flex flex-col gap-3 rounded-2xl border border-white/10 bg-white/5 p-6 transition hover:border-white/30 hover:bg-white/10">
-      <span className="text-sm font-medium uppercase tracking-[0.3em] text-white/50">
-        {number}
-      </span>
-      <h3 className="text-xl font-semibold text-white">{title}</h3>
-      <p className="text-base leading-relaxed text-white/70">{description}</p>
+    <div className="flex flex-col gap-2 rounded-xl border border-white/10 bg-white/[0.04] p-5">
+      <h3 className="text-lg font-semibold text-white">{title}</h3>
+      <p className="text-sm leading-relaxed text-white/70">{text}</p>
     </div>
   );
 }
 
-type SpecProps = {
+type StepProps = {
+  n: string;
   title: string;
-  description: string;
+  text: string;
 };
 
-function Spec({ title, description }: SpecProps) {
+function Step({ n, title, text }: StepProps) {
   return (
-    <div className="flex flex-col gap-2 rounded-xl border border-white/10 bg-white/[0.04] p-5">
-      <h3 className="text-lg font-semibold text-white">{title}</h3>
-      <p className="text-sm leading-relaxed text-white/70">{description}</p>
+    <div className="flex flex-col gap-3 rounded-2xl border border-white/10 bg-white/5 p-6 transition hover:border-white/30 hover:bg-white/10">
+      <span className="text-sm font-medium uppercase tracking-[0.3em] text-white/50">
+        {n}
+      </span>
+      <h3 className="text-xl font-semibold text-white">{title}</h3>
+      <p className="text-base leading-relaxed text-white/70">{text}</p>
     </div>
   );
 }
 
 export default function Home() {
   const t = useT("Home");
+  const messages = useTranslationsDict();
   const router = useRouter();
   const pathname = usePathname();
   const locale = pathname.split("/")[1] || "en";
-  const currentYear = new Date().getFullYear();
+
+  // Parse features array from messages
+  const home = messages.Home as unknown as {
+    features?: Array<{ title: string; text: string }>;
+    how?: { steps?: Array<{ n: string; title: string; text: string }> };
+  };
+  const features = Array.isArray(home?.features) ? home.features : [];
+  const howSteps = Array.isArray(home?.how?.steps) ? home.how.steps : [];
 
   return (
     <div className={`${inter.className} min-h-screen bg-black text-white`}>
@@ -72,7 +80,9 @@ export default function Home() {
           </select>
         </div>
       </header>
+
       <main className="mx-auto flex max-w-6xl flex-col gap-24 px-6 py-24 lg:px-8 lg:py-32">
+        {/* Hero Section */}
         <section className="grid gap-12 lg:grid-cols-[1.25fr_1fr] lg:items-center">
           <motion.div
             initial={{ opacity: 0, y: 16 }}
@@ -80,30 +90,24 @@ export default function Home() {
             transition={{ duration: 0.8, ease: "easeOut" }}
             className="max-w-xl space-y-6"
           >
-            <span className="text-sm uppercase tracking-[0.4em] text-white/50">
-              {t("hero.label")}
-            </span>
             <h1 className="text-4xl font-semibold leading-tight sm:text-5xl lg:text-6xl">
               {t("hero.title")}
             </h1>
             <p className="text-lg leading-relaxed text-white/70">
-              {t("hero.tagline")}
-            </p>
-            <p className="text-lg leading-relaxed text-white/70">
-              {t("hero.description")}
+              {t("hero.subtitle")}
             </p>
             <div className="flex flex-col gap-4 sm:flex-row sm:items-center">
               <a
-                href="#pilot"
+                href="#cta"
                 className="inline-flex items-center justify-center rounded-full bg-white px-6 py-3 text-sm font-semibold text-black transition hover:bg-white/90"
               >
-                {t("hero.primaryButton")}
+                {t("hero.ctaPrimary")}
               </a>
               <a
-                href="#solution"
+                href="/onepager.pdf"
                 className="inline-flex items-center justify-center rounded-full border border-white/30 px-6 py-3 text-sm font-semibold text-white transition hover:border-white hover:bg-white/10"
               >
-                {t("hero.secondaryButton")}
+                {t("hero.ctaSecondary")}
               </a>
             </div>
           </motion.div>
@@ -119,46 +123,42 @@ export default function Home() {
           </div>
         </section>
 
+        {/* Problem Section */}
         <section id="problem" className="space-y-6">
-          <h2 className="text-3xl font-semibold">{t("problem.heading")}</h2>
+          <h2 className="text-3xl font-semibold">{t("problem.title")}</h2>
           <p className="text-base leading-relaxed text-white/70">
-            {t("problem.paragraph1")}
-          </p>
-          <p className="text-base leading-relaxed text-white/70">
-            {t("problem.paragraph2")}
+            {t("problem.body")}
           </p>
         </section>
 
+        {/* Solution & Features Section */}
         <section
           id="solution"
           className="space-y-8 rounded-3xl border border-white/10 bg-white/[0.04] p-10"
         >
           <div className="space-y-4">
-            <h2 className="text-3xl font-semibold">{t("solution.heading")}</h2>
+            <h2 className="text-3xl font-semibold">{t("solution.title")}</h2>
             <p className="text-base leading-relaxed text-white/70">
-              {t("solution.description")}
+              {t("solution.body")}
             </p>
           </div>
           <div className="grid gap-6 md:grid-cols-3">
-            <Spec
-              title={t("specs.universalTitle")}
-              description={t("specs.universalDescription")}
-            />
-            <Spec
-              title={t("specs.stabilityTitle")}
-              description={t("specs.stabilityDescription")}
-            />
-            <Spec
-              title={t("specs.cleanTitle")}
-              description={t("specs.cleanDescription")}
-            />
+            {Array.isArray(features) &&
+              features.map((feature, idx) => (
+                <Feature
+                  key={idx}
+                  title={feature.title}
+                  text={feature.text}
+                />
+              ))}
           </div>
         </section>
 
+        {/* Detail Section */}
         <section id="detail" className="border-t border-white/10 py-16">
           <div className="mx-auto max-w-6xl px-4">
             <h2 className="mb-6 text-2xl font-semibold md:text-3xl">
-              {t("detail.heading")}
+              Precision-engineered design
             </h2>
             <Image
               src="/images/rail-detail.png"
@@ -170,50 +170,43 @@ export default function Home() {
           </div>
         </section>
 
+        {/* How It Works Section */}
         <section className="space-y-8">
           <div className="space-y-4">
-            <h2 className="text-3xl font-semibold">{t("howItWorks.heading")}</h2>
-            <p className="text-base leading-relaxed text-white/70">
-              {t("howItWorks.description")}
-            </p>
+            <h2 className="text-3xl font-semibold">{t("how.title")}</h2>
           </div>
           <div className="grid gap-6 md:grid-cols-3">
-            <Step
-              number="01"
-              title={t("howItWorks.steps.dropInTitle")}
-              description={t("howItWorks.steps.dropInDescription")}
-            />
-            <Step
-              number="02"
-              title={t("howItWorks.steps.clickTitle")}
-              description={t("howItWorks.steps.clickDescription")}
-            />
-            <Step
-              number="03"
-              title={t("howItWorks.steps.cleanTitle")}
-              description={t("howItWorks.steps.cleanDescription")}
-            />
+            {Array.isArray(howSteps) &&
+              howSteps.map((step, idx) => (
+                <Step
+                  key={idx}
+                  n={step.n}
+                  title={step.title}
+                  text={step.text}
+                />
+              ))}
           </div>
         </section>
 
+        {/* CTA Section */}
         <section
-          id="pilot"
+          id="cta"
           className="space-y-6 rounded-3xl border border-white/15 bg-white/[0.03] p-10"
         >
           <div className="space-y-3">
-            <h2 className="text-3xl font-semibold">{t("pilot.heading")}</h2>
+            <h2 className="text-3xl font-semibold">{t("cta.title")}</h2>
             <p className="text-base leading-relaxed text-white/70">
-              {t("pilot.description")}
+              {t("cta.body")}
             </p>
           </div>
           <form className="flex flex-col gap-4 sm:flex-row">
-            <label className="sr-only" htmlFor="pilot-email">
-              {t("pilot.emailLabel")}
+            <label className="sr-only" htmlFor="cta-email">
+              {t("cta.fieldLabel")}
             </label>
             <input
-              id="pilot-email"
+              id="cta-email"
               type="email"
-              placeholder={t("pilot.emailPlaceholder")}
+              placeholder={t("cta.fieldLabel")}
               className="h-12 flex-1 rounded-full border border-white/20 bg-black/80 px-5 text-sm text-white placeholder:text-white/40 focus:border-white focus:outline-none"
               required
             />
@@ -221,54 +214,18 @@ export default function Home() {
               type="submit"
               className="h-12 rounded-full bg-white px-6 text-sm font-semibold text-black transition hover:bg-white/90"
             >
-              {t("pilot.submit")}
+              {t("cta.button")}
             </button>
           </form>
+          <p className="text-xs text-white/40">{t("cta.microcopy")}</p>
         </section>
       </main>
 
+      {/* Footer */}
       <footer className="border-t border-white/10 bg-black/80">
         <div className="mx-auto max-w-6xl px-6 py-8 lg:px-8">
-          <div className="flex flex-col items-start gap-4 lg:flex-row lg:items-center lg:justify-between">
-            <span className="text-sm text-white/50">
-              {t("footer.copyright", { year: currentYear })}
-            </span>
-            <div className="flex flex-col gap-3 text-sm text-white/60 sm:flex-row sm:flex-wrap sm:items-center sm:gap-4">
-              <a
-                href={`/${locale}/privacy`}
-                className="hover:text-white"
-              >
-                {t("footer.privacy")}
-              </a>
-              <a
-                href={`/${locale}/terms`}
-                className="hover:text-white"
-              >
-                {t("footer.terms")}
-              </a>
-              <a href="/press.html" className="hover:text-white">
-                {t("footer.press")}
-              </a>
-              <a
-                href="#problem"
-                className="text-sm font-medium text-white/60 transition hover:text-white"
-              >
-                {t("footer.backToTop")}
-              </a>
-            </div>
-          </div>
-          <div className="text-sm text-white/60 mt-6 space-y-1">
-            <div>{t("footer.companyLine")}</div>
-            <div>
-              {t.rich("footer.contactLine", {
-                link: (chunks) => (
-                  <a href="mailto:info@fitgn.com" className="underline">
-                    {chunks}
-                  </a>
-                ),
-              })}
-            </div>
-            <div>{t("footer.leadershipLine")}</div>
+          <div className="text-sm text-white/60">
+            {t("footer.line")}
           </div>
         </div>
       </footer>

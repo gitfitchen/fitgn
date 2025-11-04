@@ -1,0 +1,56 @@
+{
+  "Home": {
+    "hero": {
+      "label": "FitGN Rail",
+      "title": "FitGN Rail — Locking Gastronorm Rails",
+      "tagline": "Professional GN rail systems built in Belgium.",
+      "description": "Keep every GN pan where it belongs. FitGN Rail locks frames in bain-maries and saladettes so chefs stay focused on service—not on re-seating rails mid-rush.",
+      "primaryButton": "Join the pilot",
+      "secondaryButton": "See how it locks"
+    },
+    "problem": {
+      "heading": "When rails slip, service slows",
+      "paragraph1": "Standard Gastronorm frames ride loose in bain-maries and saladettes. Every bump from a ladle or rapid pan swap sends rails drifting, breaking chill chains and forcing constant resets. Hardware fixes are clunky, and gaffer tape never survives cleaning.",
+      "paragraph2": "The result: crooked pans, inconsistent presentation, and lost seconds that compound across the line. FitGN Rail is purpose-built to eliminate the wobble."
+    },
+    "solution": {
+      "heading": "Locking or magnetic—your call",
+      "description": "FitGN Rail adapts to existing wells with either a mechanical latch or a magnetic capture point. Both approaches deliver a tight, repeatable seal that keeps rails aligned from prep to close."
+    },
+    "specs": {
+      "universalTitle": "Universal drop-in",
+      "universalDescription": "Retrofits standard GN1/1 and GN2/1 openings with no tooling or permanent alteration.",
+      "stabilityTitle": "Service-proof stability",
+      "stabilityDescription": "Rails stay true even under aggressive ladling, heavy pans, and constant reloading.",
+      "cleanTitle": "Clean-in-place ready",
+      "cleanDescription": "Smooth edges and detachable components survive daily sanitizing without trapping debris."
+    },
+    "detail": {
+      "heading": "Precision-engineered design"
+    },
+    "howItWorks": {
+      "heading": "How it works",
+      "description": "Everyday usability was the first requirement. FitGN Rail installs in minutes and removes without tools for nightly cleaning.",
+      "steps": {
+        "dropInTitle": "Drop-in frame",
+        "dropInDescription": "Set the FitGN frame into the existing GN well—no screws, drilling, or adhesives.",
+        "clickTitle": "Click the rails",
+        "clickDescription": "Slide each Gastronorm rail into place until you feel the lock or magnetic pull engage.",
+        "cleanTitle": "Clean without stress",
+        "cleanDescription": "Lift the frame out after service. The open profile rinses fast and air-dries without residue."
+      }
+    },
+    "pilot": {
+      "heading": "Join the pilot program",
+      "description": "We're partnering with forward-thinking kitchens to validate the locking rail platform. Drop your email and we'll reach out with scheduling details.",
+      "emailLabel": "Work email",
+      "emailPlaceholder": "chef@yourkitchen.com",
+      "submit": "Request invite"
+    },
+    "footer": {
+      "backToTop": "Back to top",
+      "companyDetails": "FitGN BV · Vlaanderenstraat 129 · 9000 Gent · Belgium · VAT BE0707.748.721 · <link>info@fitgn.com</link>",
+      "copyright": "© {year} FitGN. All rights reserved."
+    }
+  }
+}

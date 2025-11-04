@@ -1,8 +1,10 @@
 "use client";
 
 import { motion } from "framer-motion";
-import Image from "next/image";
 import { Inter } from "next/font/google";
+import Image from "next/image";
+import { useLocale, useTranslations } from "next-intl";
+import { useRouter } from "next/navigation";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -42,12 +44,15 @@ function Spec({ title, description }: SpecProps) {
 }
 
 export default function Home() {
+  const t = useTranslations("Home");
+  const locale = useLocale();
+  const router = useRouter();
   const currentYear = new Date().getFullYear();
 
   return (
     <div className={`${inter.className} min-h-screen bg-black text-white`}>
       <header className="border-b border-white/10 bg-black/80">
-        <div className="mx-auto flex max-w-6xl items-center px-6 py-6 lg:px-8">
+        <div className="mx-auto flex max-w-6xl items-center justify-between gap-4 px-6 py-6 lg:px-8">
           <Image
             src="/logo.png"
             alt="FitGN logo"
@@ -55,6 +60,15 @@ export default function Home() {
             height={40}
             className="opacity-90"
           />
+          <select
+            value={locale}
+            onChange={(event) => router.push(`/${event.target.value}`)}
+            className="bg-transparent border border-white/20 rounded px-2 py-1 text-sm text-white/80"
+            aria-label="Select language"
+          >
+            <option value="en">EN</option>
+            <option value="nl">NL</option>
+          </select>
         </div>
       </header>
       <main className="mx-auto flex max-w-6xl flex-col gap-24 px-6 py-24 lg:px-8 lg:py-32">
@@ -66,28 +80,29 @@ export default function Home() {
             className="max-w-xl space-y-6"
           >
             <span className="text-sm uppercase tracking-[0.4em] text-white/50">
-              FitGN Rail
+              {t("hero.label")}
             </span>
             <h1 className="text-4xl font-semibold leading-tight sm:text-5xl lg:text-6xl">
-              FitGN Rail — Locking Gastronorm Rails
+              {t("hero.title")}
             </h1>
             <p className="text-lg leading-relaxed text-white/70">
-              Keep every GN pan where it belongs. FitGN Rail locks frames in
-              bain-maries and saladettes so chefs stay focused on service—not on
-              re-seating rails mid-rush.
+              {t("hero.tagline")}
+            </p>
+            <p className="text-lg leading-relaxed text-white/70">
+              {t("hero.description")}
             </p>
             <div className="flex flex-col gap-4 sm:flex-row sm:items-center">
               <a
                 href="#pilot"
                 className="inline-flex items-center justify-center rounded-full bg-white px-6 py-3 text-sm font-semibold text-black transition hover:bg-white/90"
               >
-                Join the pilot
+                {t("hero.primaryButton")}
               </a>
               <a
                 href="#solution"
                 className="inline-flex items-center justify-center rounded-full border border-white/30 px-6 py-3 text-sm font-semibold text-white transition hover:border-white hover:bg-white/10"
               >
-                See how it locks
+                {t("hero.secondaryButton")}
               </a>
             </div>
           </motion.div>
@@ -104,17 +119,12 @@ export default function Home() {
         </section>
 
         <section id="problem" className="space-y-6">
-          <h2 className="text-3xl font-semibold">When rails slip, service slows</h2>
+          <h2 className="text-3xl font-semibold">{t("problem.heading")}</h2>
           <p className="text-base leading-relaxed text-white/70">
-            Standard Gastronorm frames ride loose in bain-maries and saladettes.
-            Every bump from a ladle or rapid pan swap sends rails drifting,
-            breaking chill chains and forcing constant resets. Hardware fixes are
-            clunky, and gaffer tape never survives cleaning.
+            {t("problem.paragraph1")}
           </p>
           <p className="text-base leading-relaxed text-white/70">
-            The result: crooked pans, inconsistent presentation, and lost seconds
-            that compound across the line. FitGN Rail is purpose-built to eliminate
-            the wobble.
+            {t("problem.paragraph2")}
           </p>
         </section>
 
@@ -123,33 +133,31 @@ export default function Home() {
           className="space-y-8 rounded-3xl border border-white/10 bg-white/[0.04] p-10"
         >
           <div className="space-y-4">
-            <h2 className="text-3xl font-semibold">Locking or magnetic—your call</h2>
+            <h2 className="text-3xl font-semibold">{t("solution.heading")}</h2>
             <p className="text-base leading-relaxed text-white/70">
-              FitGN Rail adapts to existing wells with either a mechanical latch or
-              a magnetic capture point. Both approaches deliver a tight, repeatable
-              seal that keeps rails aligned from prep to close.
+              {t("solution.description")}
             </p>
           </div>
           <div className="grid gap-6 md:grid-cols-3">
             <Spec
-              title="Universal drop-in"
-              description="Retrofits standard GN1/1 and GN2/1 openings with no tooling or permanent alteration."
+              title={t("specs.universalTitle")}
+              description={t("specs.universalDescription")}
             />
             <Spec
-              title="Service-proof stability"
-              description="Rails stay true even under aggressive ladling, heavy pans, and constant reloading."
+              title={t("specs.stabilityTitle")}
+              description={t("specs.stabilityDescription")}
             />
             <Spec
-              title="Clean-in-place ready"
-              description="Smooth edges and detachable components survive daily sanitizing without trapping debris."
+              title={t("specs.cleanTitle")}
+              description={t("specs.cleanDescription")}
             />
           </div>
         </section>
 
         <section id="detail" className="border-t border-white/10 py-16">
           <div className="mx-auto max-w-6xl px-4">
-            <h2 className="text-2xl md:text-3xl font-semibold mb-6">
-              Precision-engineered design
+            <h2 className="mb-6 text-2xl font-semibold md:text-3xl">
+              {t("detail.heading")}
             </h2>
             <Image
               src="/images/rail-detail.png"
@@ -163,27 +171,26 @@ export default function Home() {
 
         <section className="space-y-8">
           <div className="space-y-4">
-            <h2 className="text-3xl font-semibold">How it works</h2>
+            <h2 className="text-3xl font-semibold">{t("howItWorks.heading")}</h2>
             <p className="text-base leading-relaxed text-white/70">
-              Everyday usability was the first requirement. FitGN Rail installs in
-              minutes and removes without tools for nightly cleaning.
+              {t("howItWorks.description")}
             </p>
           </div>
           <div className="grid gap-6 md:grid-cols-3">
             <Step
               number="01"
-              title="Drop-in frame"
-              description="Set the FitGN frame into the existing GN well—no screws, drilling, or adhesives."
+              title={t("howItWorks.steps.dropInTitle")}
+              description={t("howItWorks.steps.dropInDescription")}
             />
             <Step
               number="02"
-              title="Click the rails"
-              description="Slide each Gastronorm rail into place until you feel the lock or magnetic pull engage."
+              title={t("howItWorks.steps.clickTitle")}
+              description={t("howItWorks.steps.clickDescription")}
             />
             <Step
               number="03"
-              title="Clean without stress"
-              description="Lift the frame out after service. The open profile rinses fast and air-dries without residue."
+              title={t("howItWorks.steps.cleanTitle")}
+              description={t("howItWorks.steps.cleanDescription")}
             />
           </div>
         </section>
@@ -193,21 +200,19 @@ export default function Home() {
           className="space-y-6 rounded-3xl border border-white/15 bg-white/[0.03] p-10"
         >
           <div className="space-y-3">
-            <h2 className="text-3xl font-semibold">Join the pilot program</h2>
+            <h2 className="text-3xl font-semibold">{t("pilot.heading")}</h2>
             <p className="text-base leading-relaxed text-white/70">
-              We&apos;re partnering with forward-thinking kitchens to validate the
-              locking rail platform. Drop your email and we&apos;ll reach out with
-              scheduling details.
+              {t("pilot.description")}
             </p>
           </div>
           <form className="flex flex-col gap-4 sm:flex-row">
             <label className="sr-only" htmlFor="pilot-email">
-              Work email
+              {t("pilot.emailLabel")}
             </label>
             <input
               id="pilot-email"
               type="email"
-              placeholder="chef@yourkitchen.com"
+              placeholder={t("pilot.emailPlaceholder")}
               className="h-12 flex-1 rounded-full border border-white/20 bg-black/80 px-5 text-sm text-white placeholder:text-white/40 focus:border-white focus:outline-none"
               required
             />
@@ -215,23 +220,34 @@ export default function Home() {
               type="submit"
               className="h-12 rounded-full bg-white px-6 text-sm font-semibold text-black transition hover:bg-white/90"
             >
-              Request invite
+              {t("pilot.submit")}
             </button>
           </form>
         </section>
       </main>
 
       <footer className="border-t border-white/10 bg-black/80">
-        <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-8 lg:px-8">
-          <span className="text-sm text-white/50">
-            © {currentYear} FitGN. All rights reserved.
-          </span>
-          <a
-            href="#problem"
-            className="text-sm font-medium text-white/60 transition hover:text-white"
-          >
-            Back to top
-          </a>
+        <div className="mx-auto max-w-6xl px-6 py-8 lg:px-8">
+          <div className="flex flex-col items-start gap-4 lg:flex-row lg:items-center lg:justify-between">
+            <span className="text-sm text-white/50">
+              {t("footer.copyright", { year: currentYear })}
+            </span>
+            <a
+              href="#problem"
+              className="text-sm font-medium text-white/60 transition hover:text-white"
+            >
+              {t("footer.backToTop")}
+            </a>
+          </div>
+          <div className="mt-6 text-sm text-white/60">
+            {t.rich("footer.companyDetails", {
+              link: (chunks) => (
+                <a href="mailto:info@fitgn.com" className="underline">
+                  {chunks}
+                </a>
+              ),
+            })}
+          </div>
         </div>
       </footer>
     </div>

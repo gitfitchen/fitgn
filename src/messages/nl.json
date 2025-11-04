@@ -1,0 +1,56 @@
+{
+  "Home": {
+    "hero": {
+      "label": "FitGN Rail",
+      "title": "FitGN Rail — Vergrendelbare Gastronormrails",
+      "tagline": "Professionele GN-railsystemen gebouwd in België.",
+      "description": "Houd elke GN-pan op zijn plaats. FitGN Rail vergrendelt frames in bain-maries en saladettes zodat chefs gefocust blijven op de service—niet op het herpositioneren van rails midden in de rush.",
+      "primaryButton": "Doe mee aan de pilot",
+      "secondaryButton": "Bekijk het vergrendelen"
+    },
+    "problem": {
+      "heading": "Als rails verschuiven, vertraagt de service",
+      "paragraph1": "Standaard Gastronormframes zitten los in bain-maries en saladettes. Elke stoot van een pollepel of snelle pannenswissel laat rails verschuiven, waardoor koelketens doorbroken worden en constante resets nodig zijn. Hardware-oplossingen zijn omslachtig en ducttape overleeft de schoonmaak nooit.",
+      "paragraph2": "Het resultaat: scheve pannen, inconsistente presentatie en verloren seconden die zich opstapelen over de hele lijn. FitGN Rail is speciaal ontwikkeld om het gewiebel te elimineren."
+    },
+    "solution": {
+      "heading": "Vergrendeling of magnetisch—jij kiest",
+      "description": "FitGN Rail past zich aan bestaande wells aan met een mechanische vergrendeling of een magnetisch vangpunt. Beide opties bieden een strakke, reproduceerbare afsluiting die rails van mise en place tot sluiting uitgelijnd houdt."
+    },
+    "specs": {
+      "universalTitle": "Universele drop-in",
+      "universalDescription": "Retrofit standaard GN1/1- en GN2/1-openingen zonder gereedschap of permanente aanpassing.",
+      "stabilityTitle": "Servicebestendige stabiliteit",
+      "stabilityDescription": "Rails blijven in lijn, zelfs bij agressief scheppen, zware pannen en constant herladen.",
+      "cleanTitle": "Ready voor reiniging ter plaatse",
+      "cleanDescription": "Glad afgewerkte randen en afneembare componenten weerstaan dagelijkse reiniging zonder vuil vast te houden."
+    },
+    "detail": {
+      "heading": "Precisie-ontworpen design"
+    },
+    "howItWorks": {
+      "heading": "Zo werkt het",
+      "description": "Gebruiksgemak stond bovenaan. FitGN Rail installeer je in minuten en verwijder je zonder gereedschap voor de nachtelijke schoonmaak.",
+      "steps": {
+        "dropInTitle": "Frame laten zakken",
+        "dropInDescription": "Plaats het FitGN-frame in de bestaande GN-well—geen schroeven, boren of lijmen.",
+        "clickTitle": "Rails vastklikken",
+        "clickDescription": "Schuif elke Gastronormrail op zijn plaats tot je de vergrendeling of magnetische aantrekking voelt.",
+        "cleanTitle": "Schoonmaken zonder stress",
+        "cleanDescription": "Til het frame na de service eruit. Het open profiel spoelt snel af en droogt zonder residu."
+      }
+    },
+    "pilot": {
+      "heading": "Doe mee aan het pilootprogramma",
+      "description": "We werken samen met vooruitstrevende keukens om het vergrendelde railplatform te valideren. Laat je e-mailadres achter en we nemen contact op met de planning.",
+      "emailLabel": "Zakelijk e-mailadres",
+      "emailPlaceholder": "chef@uwkeuken.com",
+      "submit": "Vraag uitnodiging aan"
+    },
+    "footer": {
+      "backToTop": "Terug naar boven",
+      "companyDetails": "FitGN BV · Vlaanderenstraat 129 · 9000 Gent · België · BTW BE0707.748.721 · <link>info@fitgn.com</link>",
+      "copyright": "© {year} FitGN. Alle rechten voorbehouden."
+    }
+  }
+}

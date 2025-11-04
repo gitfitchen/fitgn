@@ -6,13 +6,14 @@ import { isLocale } from "@/i18n/config";
 
 type Props = {
   children: ReactNode;
-  params: Promise<{ locale: string }>;
+  params: Promise<{ locale: string }> | { locale?: string } | undefined;
 };
 
 export default async function LocaleLayout({ children, params }: Props) {
-  const { locale } = await params;
+  const resolvedParams = await params;
+  const locale = resolvedParams?.locale;
 
-  if (!isLocale(locale)) notFound();
+  if (!locale || !isLocale(locale)) notFound();
   setRequestLocale(locale);
 
   const messages = (await import(`../../messages/${locale}.json`))

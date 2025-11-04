@@ -98,7 +98,7 @@ export default function Home() {
             </p>
             <div className="flex flex-col gap-4 sm:flex-row sm:items-center">
               <a
-                href="#cta"
+                href="#contact"
                 className="inline-flex items-center justify-center rounded-full bg-white px-6 py-3 text-sm font-semibold text-black transition hover:bg-white/90"
               >
                 {t("hero.ctaPrimary")}
@@ -225,6 +225,62 @@ export default function Home() {
             </button>
           </form>
           <p className="text-xs text-white/40">{t("cta.microcopy")}</p>
+        </section>
+
+        {/* Contact Section - Cloudflare Forms Integration */}
+        <section id="contact" className="border-t border-white/10 py-16">
+          <div className="mx-auto max-w-4xl px-4 text-center">
+            <h2 className="text-2xl font-semibold md:text-3xl mb-4">
+              {t("contact.title")}
+            </h2>
+            <p className="text-white/70 max-w-2xl mx-auto mb-8 leading-relaxed">
+              {t("contact.body")}
+            </p>
+
+            {/* Cloudflare Forms Integration Notes:
+                - Cloudflare automatically detects this form via name attribute and data-cf="true".
+                - Enable under Cloudflare Dashboard → Workers → Forms.
+                - To receive submissions via email:
+                  1. Cloudflare → Email Routing → Create address info@fitgn.com → route to your inbox.
+                  2. In Workers → Forms settings, select "fitgn-contact" and set destination to "Email: info@fitgn.com".
+                  3. Optionally add a webhook to store submissions in a database or external service.
+                - Test form: Submit via https://fitgn.com/#contact and verify submission in Cloudflare dashboard.
+            */}
+            <form
+              name="fitgn-contact"
+              method="POST"
+              data-cf="true"
+              className="grid gap-4 max-w-md mx-auto"
+            >
+              <input
+                type="text"
+                name="name"
+                placeholder={t("contact.name")}
+                required
+                className="px-4 py-3 rounded-lg bg-white/5 border border-white/15 text-white placeholder:text-white/40 focus:outline-none focus:ring-2 focus:ring-white/30"
+              />
+              <input
+                type="email"
+                name="email"
+                placeholder={t("contact.email")}
+                required
+                className="px-4 py-3 rounded-lg bg-white/5 border border-white/15 text-white placeholder:text-white/40 focus:outline-none focus:ring-2 focus:ring-white/30"
+              />
+              <textarea
+                name="message"
+                placeholder={t("contact.message")}
+                rows={4}
+                required
+                className="px-4 py-3 rounded-lg bg-white/5 border border-white/15 text-white placeholder:text-white/40 focus:outline-none focus:ring-2 focus:ring-white/30 resize-none"
+              />
+              <button
+                type="submit"
+                className="px-5 py-3 rounded-lg bg-white text-black font-semibold hover:bg-white/90 transition"
+              >
+                {t("contact.submit")}
+              </button>
+            </form>
+          </div>
         </section>
       </main>
 

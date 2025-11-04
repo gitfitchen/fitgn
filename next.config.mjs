@@ -1,1 +1,1 @@
-export default { turbopack: { root: __dirname } };
+export default { turbopack: { root: process.cwd() } };

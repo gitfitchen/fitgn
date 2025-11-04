@@ -227,61 +227,41 @@ export default function Home() {
           <p className="text-xs text-white/40">{t("cta.microcopy")}</p>
         </section>
 
-        {/* Contact Section - Cloudflare Forms Integration */}
+        {/* Contact Section */}
         <section id="contact" className="border-t border-white/10 py-16">
-          <div className="mx-auto max-w-4xl px-4 text-center">
-            <h2 className="text-2xl font-semibold md:text-3xl mb-4">
+          <div className="mx-auto max-w-2xl px-4 text-center">
+            <h2 className="text-3xl font-semibold mb-4">
               {t("contact.title")}
             </h2>
-            <p className="text-white/70 max-w-2xl mx-auto mb-8 leading-relaxed">
+            <p className="text-white/70 mb-12 leading-relaxed">
               {t.rich("contact.body", {
                 strong: (chunks) => <strong>{chunks}</strong>,
               })}
             </p>
 
-            {/* Cloudflare Forms Integration Notes:
-                - Cloudflare automatically detects this form via name attribute and data-cf="true".
-                - Enable under Cloudflare Dashboard → Workers → Forms.
-                - To receive submissions via email:
-                  1. Cloudflare → Email Routing → Create address info@fitgn.com → route to your inbox.
-                  2. In Workers → Forms settings, select "fitgn-contact" and set destination to "Email: info@fitgn.com".
-                  3. Optionally add a webhook to store submissions in a database or external service.
-                - Test form: Submit via https://fitgn.com/#contact and verify submission in Cloudflare dashboard.
-            */}
-            <form
-              name="fitgn-contact"
-              method="POST"
-              data-cf="true"
-              className="grid gap-4 max-w-md mx-auto"
-            >
-              <input
-                type="text"
-                name="name"
-                placeholder={t("contact.name")}
-                required
-                className="px-4 py-3 rounded-lg bg-white/5 border border-white/15 text-white placeholder:text-white/40 focus:outline-none focus:ring-2 focus:ring-white/30"
-              />
-              <input
-                type="email"
-                name="email"
-                placeholder={t("contact.email")}
-                required
-                className="px-4 py-3 rounded-lg bg-white/5 border border-white/15 text-white placeholder:text-white/40 focus:outline-none focus:ring-2 focus:ring-white/30"
-              />
-              <textarea
-                name="message"
-                placeholder={t("contact.message")}
-                rows={4}
-                required
-                className="px-4 py-3 rounded-lg bg-white/5 border border-white/15 text-white placeholder:text-white/40 focus:outline-none focus:ring-2 focus:ring-white/30 resize-none"
-              />
-              <button
-                type="submit"
-                className="px-5 py-3 rounded-lg bg-white text-black font-semibold hover:bg-white/90 transition"
-              >
-                {t("contact.submit")}
-              </button>
-            </form>
+            {/* Email Contact Card */}
+            <div className="inline-flex flex-col gap-6 rounded-2xl border border-white/15 bg-white/[0.03] p-8 max-w-sm">
+              <div>
+                <p className="text-sm text-white/50 uppercase tracking-wider mb-2">
+                  {t("contact.emailLabel")}
+                </p>
+                <a
+                  href="mailto:info@fitgn.com"
+                  className="text-2xl font-semibold text-white hover:text-white/80 transition break-all"
+                >
+                  info@fitgn.com
+                </a>
+              </div>
+              <div className="border-t border-white/10" />
+              <div>
+                <p className="text-sm text-white/50 uppercase tracking-wider mb-3">
+                  {t("contact.responseTime")}
+                </p>
+                <p className="text-base text-white/80">
+                  {t("contact.responseText")}
+                </p>
+              </div>
+            </div>
           </div>
         </section>
       </main>

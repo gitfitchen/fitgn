@@ -39,12 +39,11 @@
       "microcopy": "HACCP-gericht · AISI 304/316 · Pilot-keukens in BE/NL"
     },
     "contact": {
-      "title": "Contact & Verkoop",
-      "body": "Laten we jouw keuken bespreken. <strong>Pauline De Schepper</strong>, onze Algemeen Directeur, behandelt alle FitGN-aanvragen en pilootprojecten. We antwoorden meestal binnen één werkdag.",
-      "name": "Naam",
-      "email": "Werk-e-mail",
-      "message": "Vertel kort iets over je keuken...",
-      "submit": "Verstuur bericht"
+      "title": "Neem contact op",
+      "body": "Laten we jouw keuken bespreken. <strong>Pauline De Schepper</strong>, onze Algemeen Directeur, behandelt alle FitGN-aanvragen en pilootprojecten.",
+      "emailLabel": "E-mail",
+      "responseTime": "Reactietijd",
+      "responseText": "Meestal binnen één werkdag"
     },
     "footer": {
       "line": "FitGN · Vlaanderenstraat 129 · 9000 Gent · België · BTW BE0707.748.721 · info@fitgn.com"

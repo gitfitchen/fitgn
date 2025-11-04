@@ -39,12 +39,11 @@
       "microcopy": "HACCP-minded · AISI 304/316 · Pilot kitchens in BE/NL"
     },
     "contact": {
-      "title": "Contact & Sales",
-      "body": "Let's discuss your kitchen setup. <strong>Pauline De Schepper</strong>, our General Manager, handles all FitGN inquiries and pilot requests. We usually respond within one business day.",
-      "name": "Your name",
-      "email": "Work email",
-      "message": "Tell us a bit about your kitchen...",
-      "submit": "Send message"
+      "title": "Get in touch",
+      "body": "Let's discuss your kitchen setup. <strong>Pauline De Schepper</strong>, our General Manager, handles all FitGN inquiries and pilot requests.",
+      "emailLabel": "Email",
+      "responseTime": "Response time",
+      "responseText": "Usually within one business day"
     },
     "footer": {
       "line": "FitGN · Vlaanderenstraat 129 · 9000 Gent · Belgium · VAT BE0707.748.721 · info@fitgn.com"

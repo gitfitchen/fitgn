@@ -1,10 +1,8 @@
 import type { Metadata } from "next";
-import { NextIntlClientProvider } from "next-intl";
-import { notFound } from "next/navigation";
 import { Geist, Geist_Mono } from "next/font/google";
+import type { ReactNode } from "react";
+import { defaultLocale, isLocale } from "@/i18n/config";
 import "./globals.css";
-
-export const locales = ["en", "nl"] as const;
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -22,41 +20,20 @@ export const metadata: Metadata = {
 };
 
 type RootLayoutProps = Readonly<{
-  children: React.ReactNode;
-  params: { locale: (typeof locales)[number] };
+  children: ReactNode;
+  params?: { locale?: string };
 }>;
 
-async function getMessages(locale: RootLayoutProps["params"]["locale"]) {
-  try {
-    const messages = (await import(`../messages/${locale}.json`)).default;
-    return messages;
-  } catch (error) {
-    notFound();
-  }
-}
-
-export default async function RootLayout({
-  children,
-  params: { locale },
-}: RootLayoutProps) {
-  if (!locales.includes(locale)) {
-    notFound();
-  }
-
-  const messages = await getMessages(locale);
-
-  if (!messages) {
-    notFound();
-  }
+export default function RootLayout({ children, params }: RootLayoutProps) {
+  const langCandidate = params?.locale;
+  const lang = langCandidate && isLocale(langCandidate) ? langCandidate : defaultLocale;
 
   return (
-    <html lang={locale}>
+    <html lang={lang} suppressHydrationWarning>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <NextIntlClientProvider locale={locale} messages={messages}>
-          {children}
-        </NextIntlClientProvider>
+        {children}
       </body>
     </html>
   );

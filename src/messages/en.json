@@ -5,7 +5,7 @@
       "title": "FitGN Rail — Locking Gastronorm Rails",
       "tagline": "Professional GN rail systems built in Belgium.",
       "description": "Keep every GN pan where it belongs. FitGN Rail locks frames in bain-maries and saladettes so chefs stay focused on service—not on re-seating rails mid-rush.",
-      "primaryButton": "Join the pilot",
+      "primaryButton": "Talk to sales",
       "secondaryButton": "See how it locks"
     },
     "problem": {
@@ -41,14 +41,17 @@
       }
     },
     "pilot": {
-      "heading": "Join the pilot program",
-      "description": "We're partnering with forward-thinking kitchens to validate the locking rail platform. Drop your email and we'll reach out with scheduling details.",
+      "heading": "Now shipping pre-series units",
+      "description": "Now shipping pre-series units. Talk to sales.",
       "emailLabel": "Work email",
       "emailPlaceholder": "chef@yourkitchen.com",
-      "submit": "Request invite"
+      "submit": "Talk to sales"
     },
     "footer": {
       "backToTop": "Back to top",
+      "privacy": "Privacy",
+      "terms": "Terms",
+      "press": "Press",
       "companyDetails": "FitGN BV · Vlaanderenstraat 129 · 9000 Gent · Belgium · VAT BE0707.748.721 · <link>info@fitgn.com</link>",
       "copyright": "© {year} FitGN. All rights reserved."
     }

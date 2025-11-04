@@ -232,21 +232,38 @@ export default function Home() {
             <span className="text-sm text-white/50">
               {t("footer.copyright", { year: currentYear })}
             </span>
-            <a
-              href="#problem"
-              className="text-sm font-medium text-white/60 transition hover:text-white"
-            >
-              {t("footer.backToTop")}
-            </a>
+            <div className="flex flex-col gap-3 text-sm text-white/60 sm:flex-row sm:flex-wrap sm:items-center sm:gap-4">
+              <a
+                href={`/${locale}/privacy`}
+                className="hover:text-white"
+              >
+                {t("footer.privacy")}
+              </a>
+              <a
+                href={`/${locale}/terms`}
+                className="hover:text-white"
+              >
+                {t("footer.terms")}
+              </a>
+              <a href="/press.html" className="hover:text-white">
+                {t("footer.press")}
+              </a>
+              <a
+                href="#problem"
+                className="text-sm font-medium text-white/60 transition hover:text-white"
+              >
+                {t("footer.backToTop")}
+              </a>
+            </div>
           </div>
-          <div className="mt-6 text-sm text-white/60">
-            {t.rich("footer.companyDetails", {
-              link: (chunks) => (
-                <a href="mailto:info@fitgn.com" className="underline">
-                  {chunks}
-                </a>
-              ),
-            })}
+          <div className="text-sm text-white/60 mt-6 space-y-1">
+            <div>FitGN BV · Vlaanderenstraat 129 · 9000 Gent · Belgium</div>
+            <div>
+              VAT: BE0707.748.721 ·{" "}
+              <a href="mailto:info@fitgn.com" className="underline">
+                info@fitgn.com
+              </a>
+            </div>
           </div>
         </div>
       </footer>

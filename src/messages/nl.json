@@ -5,7 +5,7 @@
       "title": "FitGN Rail — Vergrendelbare Gastronormrails",
       "tagline": "Professionele GN-railsystemen gebouwd in België.",
       "description": "Houd elke GN-pan op zijn plaats. FitGN Rail vergrendelt frames in bain-maries en saladettes zodat chefs gefocust blijven op de service—niet op het herpositioneren van rails midden in de rush.",
-      "primaryButton": "Doe mee aan de pilot",
+      "primaryButton": "Neem contact op met sales",
       "secondaryButton": "Bekijk het vergrendelen"
     },
     "problem": {
@@ -41,14 +41,17 @@
       }
     },
     "pilot": {
-      "heading": "Doe mee aan het pilootprogramma",
-      "description": "We werken samen met vooruitstrevende keukens om het vergrendelde railplatform te valideren. Laat je e-mailadres achter en we nemen contact op met de planning.",
+      "heading": "Nu leverbaar als pre-serie",
+      "description": "Nu leverbaar als pre-serie. Neem contact op met sales.",
       "emailLabel": "Zakelijk e-mailadres",
       "emailPlaceholder": "chef@uwkeuken.com",
-      "submit": "Vraag uitnodiging aan"
+      "submit": "Neem contact op met sales"
     },
     "footer": {
       "backToTop": "Terug naar boven",
+      "privacy": "Privacy",
+      "terms": "Terms",
+      "press": "Press",
       "companyDetails": "FitGN BV · Vlaanderenstraat 129 · 9000 Gent · België · BTW BE0707.748.721 · <link>info@fitgn.com</link>",
       "copyright": "© {year} FitGN. Alle rechten voorbehouden."
     }

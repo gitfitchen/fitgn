@@ -234,9 +234,7 @@ export default function Home() {
               {t("contact.title")}
             </h2>
             <p className="text-white/70 mb-12 leading-relaxed">
-              {t.rich("contact.body", {
-                strong: (chunks) => <strong>{chunks}</strong>,
-              })}
+              {t("contact.body")}
             </p>
 
             {/* Email Contact Card */}

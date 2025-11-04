@@ -103,6 +103,12 @@ export default function Home() {
               >
                 {t("hero.ctaPrimary")}
               </a>
+              <a
+                href="#how"
+                className="inline-flex items-center justify-center rounded-full border border-white/30 px-6 py-3 text-sm font-semibold text-white transition hover:border-white hover:bg-white/10"
+              >
+                {t("hero.ctaSecondary")}
+              </a>
             </div>
           </motion.div>
           <div className="relative aspect-square w-full max-w-md place-self-center overflow-hidden rounded-3xl border border-white/10 bg-gradient-to-br from-white/10 via-white/5 to-transparent">
@@ -178,7 +184,7 @@ export default function Home() {
         </section>
 
         {/* How It Works Section */}
-        <section className="space-y-8">
+        <section id="how" className="space-y-8">
           <div className="space-y-4">
             <h2 className="text-3xl font-semibold">{t("how.title")}</h2>
           </div>

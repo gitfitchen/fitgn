@@ -3,7 +3,7 @@
     "hero": {
       "title": "FitGN Rail — Locking Gastronorm rails",
       "subtitle": "Professional GN rail systems built in Belgium. Keep every GN pan where it belongs. FitGN Rail locks rails in bain-maries and saladettes so chefs stay focused on service — not on reseating hardware mid-rush.",
-      "ctaPrimary": "Talk to sales",
+      "ctaPrimary": "Join the pre-order list",
       "ctaSecondary": "See how it works"
     },
     "problem": {
@@ -31,22 +31,23 @@
         { "n": "3", "title": "Service & clean", "text": "Swap pans at speed. Lift the base after service; the open profile rinses and dries fast." }
       ]
     },
-    "cta": {
-      "title": "Now shipping pre-series units",
-      "body": "Be among the first kitchens in Europe to lock every GN rail in place.",
-      "fieldLabel": "Work email",
-      "button": "Request access",
-      "microcopy": "HACCP-minded · AISI 304/316 · Pilot kitchens in BE/NL"
-    },
     "contact": {
-      "title": "Get in touch",
-      "body": "Let's discuss your kitchen setup. Pauline De Schepper, our General Manager, handles all FitGN inquiries and pilot requests.",
+      "title": "Pre-order & Updates",
+      "body": "Be first in line for FitGN Rail. Join our pre-order list and we'll keep you posted on availability and pilot opportunities. Your contact at FitGN: Pauline De Schepper (General Manager). We usually reply within one business day.",
       "emailLabel": "Email",
+      "emailCta": "Email us",
+      "copyCta": "Copy email",
+      "copied": "Copied!",
+      "mailSubject": "Pre-order interest — FitGN Rail",
+      "mailBody": "Hi FitGN team,%0D%0A%0D%0AI'm interested in pre-ordering FitGN Rail.%0D%0A%0D%0ACompany:%0D%0AContact:%0D%0AEstimated number of GN rails:%0D%0AAny constraints (dimensions/use case):%0D%0A",
       "responseTime": "Response time",
       "responseText": "Usually within one business day"
     },
+    "cta": {
+      "microcopy": "HACCP-minded · AISI 304/316 · Pilot kitchens in BE/NL"
+    },
     "footer": {
-      "line": "FitGN · Vlaanderenstraat 129 · 9000 Gent · Belgium · VAT BE0707.748.721 · info@fitgn.com"
+      "line": "FitGN · Vlaanderenstraat 129 · 9000 Gent · Belgium · VAT BE 0707.748.721 · info@fitgn.com"
     }
   }
 }

@@ -3,7 +3,7 @@
     "hero": {
       "title": "FitGN Rail — Verriegelbare Gastronormschienen",
       "subtitle": "Professionelle GN-Schienensysteme aus Belgien. Jede GN-Wanne an ihrem Platz. FitGN Rail verriegelt Schienen in Bain-Maries und Saladetten, damit Köche sich auf den Service konzentrieren können — nicht darauf, Hardware während der Rush-Hour neu auszurichten.",
-      "ctaPrimary": "Kontakt aufnehmen",
+      "ctaPrimary": "Zur Vorbestellung anmelden",
       "ctaSecondary": "So funktioniert's"
     },
     "problem": {
@@ -31,19 +31,20 @@
         { "n": "3", "title": "Service & Reinigung", "text": "Wannen schnell wechseln. Nach dem Service die Basis herausheben; das offene Profil spült und trocknet schnell." }
       ]
     },
-    "cta": {
-      "title": "Jetzt Vorserie lieferbar",
-      "body": "Gehören Sie zu den ersten Küchen in Europa, die jede GN-Schiene an ihrem Platz verriegeln.",
-      "fieldLabel": "Geschäftliche E-Mail",
-      "button": "Zugang anfragen",
-      "microcopy": "HACCP-orientiert · AISI 304/316 · Pilotküchen in BE/NL"
-    },
     "contact": {
-      "title": "Kontakt & Vertrieb",
-      "body": "Lassen Sie uns über Ihre Kücheneinrichtung und Prototyp-Anforderungen sprechen. Pauline De Schepper, unsere General Managerin, kümmert sich persönlich um alle FitGN-Anfragen und Pilotprojekte.",
+      "title": "Vorbestellung & Updates",
+      "body": "Gehören Sie zu den Ersten für FitGN Rail. Melden Sie sich für die Vorbestell-Liste an – wir informieren Sie über Verfügbarkeit und Pilotprojekte. Ihre Ansprechpartnerin: Pauline De Schepper (Geschäftsführerin). In der Regel erhalten Sie innerhalb eines Werktags eine Rückmeldung.",
       "emailLabel": "E-Mail",
+      "emailCta": "E-Mail senden",
+      "copyCta": "E-Mail kopieren",
+      "copied": "Kopiert!",
+      "mailSubject": "Interesse an Vorbestellung — FitGN Rail",
+      "mailBody": "Guten Tag liebes FitGN-Team,%0D%0A%0D%0Aich möchte mich für die Vorbestell-Liste von FitGN Rail anmelden.%0D%0A%0D%0AFirmenname:%0D%0AKontaktperson:%0D%0AGeschätzte Anzahl GN-Schienen:%0D%0ABesondere Anforderungen (Maße/Einsatz):%0D%0A",
       "responseTime": "Antwortzeit",
       "responseText": "Normalerweise innerhalb eines Werktags"
+    },
+    "cta": {
+      "microcopy": "HACCP-orientiert · AISI 304/316 · Pilotküchen in BE/NL"
     },
     "footer": {
       "line": "FitGN · Vlaanderenstraat 129 · 9000 Gent · Belgien · USt-IdNr. BE 0707.748.721 · info@fitgn.com"

@@ -3,7 +3,7 @@
     "hero": {
       "title": "FitGN Rail — Rails Gastronorm verrouillables",
       "subtitle": "Systèmes de rails GN professionnels fabriqués en Belgique. Gardez chaque bac GN à sa place. FitGN Rail verrouille les rails dans les bains-marie et saladettes pour que les chefs restent concentrés sur le service — pas sur le réajustement du matériel en plein coup de feu.",
-      "ctaPrimary": "Contacter les ventes",
+      "ctaPrimary": "S'inscrire à la liste d'attente",
       "ctaSecondary": "Voir comment cela fonctionne"
     },
     "problem": {
@@ -31,19 +31,20 @@
         { "n": "3", "title": "Service & nettoyage", "text": "Changez les bacs rapidement. Retirez la base après le service ; le profil ouvert se rince et sèche rapidement." }
       ]
     },
-    "cta": {
-      "title": "Expédition des unités de pré-série en cours",
-      "body": "Soyez parmi les premières cuisines d'Europe à verrouiller chaque rail GN en place.",
-      "fieldLabel": "E-mail professionnel",
-      "button": "Demander l'accès",
-      "microcopy": "Orienté HACCP · AISI 304/316 · Cuisines pilotes en BE/NL"
-    },
     "contact": {
-      "title": "Contact & Ventes",
-      "body": "Discutons de votre configuration de cuisine et de vos besoins en prototypes. Pauline De Schepper, notre Directrice Générale, s'occupe personnellement de toutes les demandes FitGN et des projets pilotes.",
+      "title": "Précommande & mises à jour",
+      "body": "Soyez parmi les premiers à recevoir FitGN Rail. Inscrivez-vous à la liste de précommande — nous vous informerons des dates de disponibilité et des programmes pilotes. Contact : Pauline De Schepper (Directrice générale). Réponse sous 24 heures ouvrées.",
       "emailLabel": "E-mail",
+      "emailCta": "Nous écrire",
+      "copyCta": "Copier l'e-mail",
+      "copied": "Copié !",
+      "mailSubject": "Intérêt pour la précommande — FitGN Rail",
+      "mailBody": "Bonjour l'équipe FitGN,%0D%0A%0D%0ANous souhaitons nous inscrire à la liste de précommande pour FitGN Rail.%0D%0A%0D%0AEntreprise :%0D%0AContact :%0D%0ANombre estimé de rails GN :%0D%0ABesoins spécifiques :%0D%0A",
       "responseTime": "Délai de réponse",
       "responseText": "Généralement sous un jour ouvrable"
+    },
+    "cta": {
+      "microcopy": "Orienté HACCP · AISI 304/316 · Cuisines pilotes en BE/NL"
     },
     "footer": {
       "line": "FitGN · Vlaanderenstraat 129 · 9000 Gand · Belgique · TVA BE 0707.748.721 · info@fitgn.com"

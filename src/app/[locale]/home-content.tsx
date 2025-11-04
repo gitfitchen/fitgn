@@ -1,3 +1,55 @@
+/**
+ * CLOUDFLARE EMAIL ROUTING CONFIGURATION
+ *
+ * To set up email routing for info@fitgn.com -> your destination:
+ *
+ * VIA CLOUDFLARE API:
+ * 1. Get your Cloudflare API Token (Cloudflare Dashboard > My Profile > API Tokens)
+ * 2. Run this curl command to create the email routing rule:
+ *
+ * curl --request POST \
+ *   --url https://api.cloudflare.com/client/v4/accounts/{account_id}/email/routing/address/forwarding \
+ *   --header "Authorization: Bearer {api_token}" \
+ *   --header "Content-Type: application/json" \
+ *   --data '{
+ *     "source": "info@fitgn.com",
+ *     "destination": "{your-email@example.com}"
+ *   }'
+ *
+ * Replace:
+ * - {account_id}: Your Cloudflare Account ID (found in URL or via API)
+ * - {api_token}: Your Cloudflare API token
+ * - {your-email@example.com}: Your destination email address
+ *
+ * VIA CLOUDFLARE DASHBOARD (Manual):
+ * 1. Go to Email > Email Routing in Cloudflare Dashboard
+ * 2. Create routing rule:
+ *    - Address: info@fitgn.com
+ *    - Forward to: [your destination email]
+ * 3. Verify the destination email (confirmation link will be sent)
+ * 4. Enable the routing rule
+ *
+ * TERRAFORM (Infrastructure as Code):
+ * provider "cloudflare" {
+ *   api_token = var.cloudflare_api_token
+ * }
+ *
+ * resource "cloudflare_email_routing_rule" "info_fitgn" {
+ *   zone_id  = var.cloudflare_zone_id
+ *   name     = "FitGN Info to Sales"
+ *   enabled  = true
+ *   matchers = [{
+ *     type = "literal"
+ *     field = "to"
+ *     value = "info@fitgn.com"
+ *   }]
+ *   actions = [{
+ *     type = "forward"
+ *     values = ["pauline@example.com"]  # Update with real destination
+ *   }]
+ * }
+ */
+
 "use client";
 
 import { motion } from "framer-motion";
@@ -5,6 +57,7 @@ import { Inter } from "next/font/google";
 import Image from "next/image";
 import { useRouter, usePathname } from "next/navigation";
 import { useT, useTranslationsDict } from "@/i18n/use-translations";
+import { useState } from "react";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -43,6 +96,36 @@ function Step({ n, title, text }: StepProps) {
   );
 }
 
+type CopyEmailButtonProps = {
+  email: string;
+  label: string;
+};
+
+function CopyEmailButton({ email, label }: CopyEmailButtonProps) {
+  const t = useT("Home");
+  const [copied, setCopied] = useState(false);
+
+  const handleCopy = async () => {
+    try {
+      await navigator.clipboard.writeText(email);
+      setCopied(true);
+      setTimeout(() => setCopied(false), 2000);
+    } catch (err) {
+      console.error("Failed to copy email:", err);
+    }
+  };
+
+  return (
+    <button
+      onClick={handleCopy}
+      className="inline-flex items-center justify-center rounded-full border border-white/30 px-6 py-3 text-sm font-semibold text-white transition hover:border-white hover:bg-white/10"
+      aria-live="polite"
+    >
+      {copied ? t("contact.copied") : label}
+    </button>
+  );
+}
+
 export default function Home() {
   const t = useT("Home");
   const messages = useTranslationsDict();
@@ -77,6 +160,8 @@ export default function Home() {
           >
             <option value="en">EN</option>
             <option value="nl">NL</option>
+            <option value="de">DE</option>
+            <option value="fr">FR</option>
           </select>
         </div>
       </header>
@@ -175,10 +260,7 @@ export default function Home() {
           <h2 className="text-3xl font-semibold">{t("about.title")}</h2>
           <p className="text-base leading-relaxed text-white/70">
             {t.rich("about.body", {
-              Fitchen: (chunks) => <strong>{chunks}</strong>,
-              Koen: (chunks) => <strong>{chunks}</strong>,
-              Pauline: (chunks) => <strong>{chunks}</strong>,
-              FitGN: (chunks) => <strong>{chunks}</strong>,
+              strong: (chunks) => <strong>{chunks}</strong>,
             })}
           </p>
         </section>
@@ -201,72 +283,57 @@ export default function Home() {
           </div>
         </section>
 
-        {/* CTA Section */}
-        <section
-          id="cta"
-          className="space-y-6 rounded-3xl border border-white/15 bg-white/[0.03] p-10"
-        >
-          <div className="space-y-3">
-            <h2 className="text-3xl font-semibold">{t("cta.title")}</h2>
-            <p className="text-base leading-relaxed text-white/70">
-              {t("cta.body")}
-            </p>
-          </div>
-          <form className="flex flex-col gap-4 sm:flex-row">
-            <label className="sr-only" htmlFor="cta-email">
-              {t("cta.fieldLabel")}
-            </label>
-            <input
-              id="cta-email"
-              type="email"
-              placeholder={t("cta.fieldLabel")}
-              className="h-12 flex-1 rounded-full border border-white/20 bg-black/80 px-5 text-sm text-white placeholder:text-white/40 focus:border-white focus:outline-none"
-              required
-            />
-            <button
-              type="submit"
-              className="h-12 rounded-full bg-white px-6 text-sm font-semibold text-black transition hover:bg-white/90"
-            >
-              {t("cta.button")}
-            </button>
-          </form>
-          <p className="text-xs text-white/40">{t("cta.microcopy")}</p>
-        </section>
-
-        {/* Contact Section */}
-        <section id="contact" className="border-t border-white/10 py-16">
-          <div className="mx-auto max-w-2xl px-4 text-center">
-            <h2 className="text-3xl font-semibold mb-4">
-              {t("contact.title")}
-            </h2>
-            <p className="text-white/70 mb-12 leading-relaxed">
+        {/* Pre-order & Updates Section */}
+        <section id="contact" className="space-y-8">
+          <div className="space-y-4">
+            <h2 className="text-3xl font-semibold">{t("contact.title")}</h2>
+            <p className="text-base leading-relaxed text-white/70 max-w-2xl">
               {t("contact.body")}
             </p>
+          </div>
 
-            {/* Email Contact Card */}
-            <div className="inline-flex flex-col gap-6 rounded-2xl border border-white/15 bg-white/[0.03] p-8 max-w-sm">
-              <div>
-                <p className="text-sm text-white/50 uppercase tracking-wider mb-2">
-                  {t("contact.emailLabel")}
-                </p>
-                <a
-                  href="mailto:info@fitgn.com"
-                  className="text-2xl font-semibold text-white hover:text-white/80 transition break-all"
-                >
-                  info@fitgn.com
-                </a>
-              </div>
-              <div className="border-t border-white/10" />
-              <div>
-                <p className="text-sm text-white/50 uppercase tracking-wider mb-3">
-                  {t("contact.responseTime")}
-                </p>
-                <p className="text-base text-white/80">
-                  {t("contact.responseText")}
-                </p>
-              </div>
+          {/* Email Contact Card */}
+          <div className="flex flex-col gap-6 rounded-3xl border border-white/15 bg-white/[0.03] p-10 max-w-md">
+            <div>
+              <p className="text-xs text-white/50 uppercase tracking-widest mb-3">
+                {t("contact.emailLabel")}
+              </p>
+              <a
+                href={`mailto:info@fitgn.com?subject=${encodeURIComponent(
+                  t("contact.mailSubject")
+                )}&body=${encodeURIComponent(t("contact.mailBody"))}`}
+                className="text-2xl font-semibold text-white hover:text-white/80 transition break-all"
+              >
+                info@fitgn.com
+              </a>
+            </div>
+            <div className="border-t border-white/10" />
+            <div className="flex flex-col gap-4">
+              <a
+                href={`mailto:info@fitgn.com?subject=${encodeURIComponent(
+                  t("contact.mailSubject")
+                )}&body=${encodeURIComponent(t("contact.mailBody"))}`}
+                className="inline-flex items-center justify-center rounded-full bg-white px-6 py-3 text-sm font-semibold text-black transition hover:bg-white/90"
+              >
+                {t("contact.emailCta")}
+              </a>
+              <CopyEmailButton
+                email="info@fitgn.com"
+                label={t("contact.copyCta")}
+              />
+            </div>
+            <div className="border-t border-white/10" />
+            <div>
+              <p className="text-xs text-white/50 uppercase tracking-widest mb-3">
+                {t("contact.responseTime")}
+              </p>
+              <p className="text-sm text-white/70">
+                {t("contact.responseText")}
+              </p>
             </div>
           </div>
+
+          <p className="text-xs text-white/40">{t("cta.microcopy")}</p>
         </section>
       </main>
 

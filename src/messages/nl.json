@@ -3,7 +3,7 @@
     "hero": {
       "title": "FitGN Rail — Vergrendelbare Gastronormrails",
       "subtitle": "Professionele GN-railsystemen gebouwd in België. Houd elke GN-pan op zijn plaats. FitGN Rail vergrendelt rails in bain-maries en saladettes zodat chefs gefocust blijven op de service — niet op het herpositioneren van hardware midden in de rush.",
-      "ctaPrimary": "Neem contact op met sales",
+      "ctaPrimary": "Schrijf je in voor de pre-orderlijst",
       "ctaSecondary": "Zie hoe het werkt"
     },
     "problem": {
@@ -31,22 +31,23 @@
         { "n": "3", "title": "Service & schoonmaken", "text": "Wisselen van pannen in hoog tempo. Til de basis na service eruit; het open profiel spoelt snel en droogt snel." }
       ]
     },
-    "cta": {
-      "title": "Nu leverbaar als pre-serie",
-      "body": "Wees een van de eerste keukens in Europa die elke GN-rail op zijn plaats vergrendelt.",
-      "fieldLabel": "Zakelijk e-mailadres",
-      "button": "Toegang aanvragen",
-      "microcopy": "HACCP-gericht · AISI 304/316 · Pilot-keukens in BE/NL"
-    },
     "contact": {
-      "title": "Neem contact op",
-      "body": "Laten we jouw keuken bespreken. Pauline De Schepper, onze Algemeen Directeur, behandelt alle FitGN-aanvragen en pilootprojecten.",
+      "title": "Pre-order & updates",
+      "body": "Sta als eerste op de lijst voor FitGN Rail. Schrijf je in voor de pre-orderlijst — we houden je op de hoogte van beschikbaarheid en pilootprojecten. Jouw contact bij FitGN: Pauline De Schepper (Algemeen Directeur). We reageren meestal binnen één werkdag.",
       "emailLabel": "E-mail",
+      "emailCta": "Mail ons",
+      "copyCta": "E-mail kopiëren",
+      "copied": "Gekopieerd!",
+      "mailSubject": "Interesse in pre-order — FitGN Rail",
+      "mailBody": "Beste team van FitGN,%0D%0A%0D%0AGraag wil ik mij aanmelden voor de pre-order van FitGN Rail.%0D%0A%0D%0ABedrijf:%0D%0AContactpersoon:%0D%0AGeschat aantal GN-rails:%0D%0ASpecifieke eisen (afmetingen/toepassing):%0D%0A",
       "responseTime": "Reactietijd",
       "responseText": "Meestal binnen één werkdag"
     },
+    "cta": {
+      "microcopy": "HACCP-gericht · AISI 304/316 · Pilot-keukens in BE/NL"
+    },
     "footer": {
-      "line": "FitGN · Vlaanderenstraat 129 · 9000 Gent · België · BTW BE0707.748.721 · info@fitgn.com"
+      "line": "FitGN · Vlaanderenstraat 129 · 9000 Gent · België · BTW BE 0707.748.721 · info@fitgn.com"
     }
   }
 }

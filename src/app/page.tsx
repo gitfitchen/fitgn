@@ -46,6 +46,17 @@ export default function Home() {
 
   return (
     <div className={`${inter.className} min-h-screen bg-black text-white`}>
+      <header className="border-b border-white/10 bg-black/80">
+        <div className="mx-auto flex max-w-6xl items-center px-6 py-6 lg:px-8">
+          <Image
+            src="/logo.png"
+            alt="FitGN logo"
+            width={120}
+            height={40}
+            className="opacity-90"
+          />
+        </div>
+      </header>
       <main className="mx-auto flex max-w-6xl flex-col gap-24 px-6 py-24 lg:px-8 lg:py-32">
         <section className="grid gap-12 lg:grid-cols-[1.25fr_1fr] lg:items-center">
           <motion.div
@@ -82,7 +93,7 @@ export default function Home() {
           </motion.div>
           <div className="relative aspect-square w-full max-w-md place-self-center overflow-hidden rounded-3xl border border-white/10 bg-gradient-to-br from-white/10 via-white/5 to-transparent">
             <Image
-              src="/images/rail-hero.jpg"
+              src="/images/rail-hero.png"
               alt="FitGN Rail prototype installed in a bain-marie"
               fill
               priority
@@ -131,6 +142,21 @@ export default function Home() {
             <Spec
               title="Clean-in-place ready"
               description="Smooth edges and detachable components survive daily sanitizing without trapping debris."
+            />
+          </div>
+        </section>
+
+        <section id="detail" className="border-t border-white/10 py-16">
+          <div className="mx-auto max-w-6xl px-4">
+            <h2 className="text-2xl md:text-3xl font-semibold mb-6">
+              Precision-engineered design
+            </h2>
+            <Image
+              src="/images/rail-detail.png"
+              alt="Exploded technical view of FitGN Rail"
+              width={1600}
+              height={1200}
+              className="rounded-2xl border border-white/10 object-cover"
             />
           </div>
         </section>

@@ -234,7 +234,9 @@ export default function Home() {
               {t("contact.title")}
             </h2>
             <p className="text-white/70 max-w-2xl mx-auto mb-8 leading-relaxed">
-              {t("contact.body")}
+              {t.rich("contact.body", {
+                strong: (chunks) => <strong>{chunks}</strong>,
+              })}
             </p>
 
             {/* Cloudflare Forms Integration Notes:

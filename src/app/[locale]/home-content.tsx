@@ -3,8 +3,8 @@
 import { motion } from "framer-motion";
 import { Inter } from "next/font/google";
 import Image from "next/image";
-import { useLocale, useTranslations } from "next-intl";
-import { useRouter } from "next/navigation";
+import { useRouter, usePathname } from "next/navigation";
+import { useT } from "@/i18n/use-translations";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -44,9 +44,10 @@ function Spec({ title, description }: SpecProps) {
 }
 
 export default function Home() {
-  const t = useTranslations("Home");
-  const locale = useLocale();
+  const t = useT("Home");
   const router = useRouter();
+  const pathname = usePathname();
+  const locale = pathname.split("/")[1] || "en";
   const currentYear = new Date().getFullYear();
 
   return (

@@ -1,0 +1,52 @@
+{
+  "Home": {
+    "hero": {
+      "title": "FitGN Rail — Rails Gastronorm verrouillables",
+      "subtitle": "Systèmes de rails GN professionnels fabriqués en Belgique. Gardez chaque bac GN à sa place. FitGN Rail verrouille les rails dans les bains-marie et saladettes pour que les chefs restent concentrés sur le service — pas sur le réajustement du matériel en plein coup de feu.",
+      "ctaPrimary": "Contacter les ventes",
+      "ctaSecondary": "Voir comment cela fonctionne"
+    },
+    "problem": {
+      "title": "Quand les rails glissent, le service ralentit",
+      "body": "Les rails Gastronorm standards reposent librement dans les bains-marie et saladettes. Chaque coup de louche ou changement rapide de bac les désaligne, rompt la chaîne du froid et force des réajustements constants. Le ruban adhésif se décolle après quelques lavages. Résultat : bacs de travers, présentation incohérente et secondes perdues à chaque service."
+    },
+    "solution": {
+      "title": "Verrouillage mécanique ou magnétique — à vous de choisir",
+      "body": "FitGN Rail équipe les cuves existantes soit d'un système de verrouillage mécanique à clic, soit d'une option magnétique haute adhérence. Les deux garantissent une position de rail fixe et reproductible de la mise en place à la fermeture, sans perçage permanent."
+    },
+    "features": [
+      { "title": "Base universelle à poser", "text": "S'adapte aux ouvertures GN 1/1 et GN 2/1 ; pas de découpe, pas de soudure." },
+      { "title": "Stabilité à l'épreuve du service", "text": "Les rails restent en place pendant un service intense — plus de cliquetis ni de réalignement en plein rush." },
+      { "title": "Conception hygiénique", "text": "Surfaces de contact en acier inoxydable AISI 304/316, bords lisses, facile à retirer et nettoyer." }
+    ],
+    "about": {
+      "title": "Né d'un problème de cuisine",
+      "body": "Dans notre propre restaurant <strong>Fitchen</strong> à Gand, nous en avions assez des rails GN qui glissaient à chaque service. Un soir, le fondateur <strong>Koen Mortier</strong> a esquissé une version verrouillable sur un bon de mise en place. Avec <strong>Pauline De Schepper</strong>, qui gère les opérations quotidiennes, cette esquisse est devenue <strong>FitGN Rail</strong> — le premier système qui maintient chaque bac Gastronorm verrouillé, de niveau et conforme HACCP."
+    },
+    "how": {
+      "title": "Comment ça marche",
+      "steps": [
+        { "n": "1", "title": "Base à poser", "text": "Placez la base à profil bas dans la cuve GN — pas de vis, pas d'adhésifs." },
+        { "n": "2", "title": "Encliqueter les rails", "text": "Faites glisser chaque rail jusqu'à sentir le verrouillage (ou l'engagement magnétique). Tout reste aligné." },
+        { "n": "3", "title": "Service & nettoyage", "text": "Changez les bacs rapidement. Retirez la base après le service ; le profil ouvert se rince et sèche rapidement." }
+      ]
+    },
+    "cta": {
+      "title": "Expédition des unités de pré-série en cours",
+      "body": "Soyez parmi les premières cuisines d'Europe à verrouiller chaque rail GN en place.",
+      "fieldLabel": "E-mail professionnel",
+      "button": "Demander l'accès",
+      "microcopy": "Orienté HACCP · AISI 304/316 · Cuisines pilotes en BE/NL"
+    },
+    "contact": {
+      "title": "Contact & Ventes",
+      "body": "Discutons de votre configuration de cuisine et de vos besoins en prototypes. Pauline De Schepper, notre Directrice Générale, s'occupe personnellement de toutes les demandes FitGN et des projets pilotes.",
+      "emailLabel": "E-mail",
+      "responseTime": "Délai de réponse",
+      "responseText": "Généralement sous un jour ouvrable"
+    },
+    "footer": {
+      "line": "FitGN · Vlaanderenstraat 129 · 9000 Gand · Belgique · TVA BE 0707.748.721 · info@fitgn.com"
+    }
+  }
+}

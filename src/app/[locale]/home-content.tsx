@@ -208,10 +208,10 @@ export default function Home() {
             className="bg-transparent border border-white/20 rounded px-2 py-1 text-sm text-white/80"
             aria-label="Select language"
           >
-            <option value="en">EN</option>
             <option value="nl">NL</option>
-            <option value="de">DE</option>
+            <option value="en">EN</option>
             <option value="fr">FR</option>
+            <option value="de">DE</option>
             <option value="es">ES</option>
             <option value="it">IT</option>
           </select>

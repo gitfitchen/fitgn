@@ -1,77 +1,68 @@
 {
   "Home": {
     "hero": {
-      "title": "FitGN Rail — Modulares verriegelndes Gastronormsystem",
-      "subtitle": "FitGN Rail ist ein modulares Set aus dickwandigen Edelstahlschienen, das GN-Behälter zuverlässig fixiert. Legen Sie die Schienen über Bain-Maries oder Saladetten, klicken Sie die Segmente zusammen und jede Öffnung bleibt ausgerichtet — ohne Durchbiegen oder Klappern.",
+      "title": "FitGN Rail — Modulare verriegelbare Gastronormschienen",
+      "subtitle": "FitGN Rail ist ein modulares Set aus Gastronorm-Schienen, das Standard-GN-Behälter fixiert. Legen Sie die Schienen über Bain-Maries oder Saladetten, klicken Sie die Segmente zusammen und jede Öffnung bleibt ausgerichtet.",
       "supporting": "Konfigurieren Sie Ihr Service-Raster mit GN 1/1, 1/2, 1/3, 1/4, 1/6 und 1/9 Schienen, die in Sekunden einrasten und ihre Geometrie auch im Stoßverkehr halten.",
       "ctaPrimary": "Zur Vorbestellung anmelden",
       "ctaSecondary": "So funktioniert's"
     },
     "problem": {
       "title": "Wenn Schienen verrutschen, leidet der Service",
-      "body": "Lose Gastronormschienen rutschen, biegen sich und klappern bei jedem Kellenstoß. Teams verlieren Minuten beim Nachjustieren, riskieren unterbrochene Kühlketten und kämpfen mit unrunder Präsentation. Provisorien wie Klebeband oder Silikonkeile halten nur wenige Spülgänge — die Branche \"lebt einfach damit\"."
+      "body": "Lose Gastronormschienen rutschen, biegen sich und wirken asymmetrisch. Teams verlieren Zeit beim Nachjustieren, es entstehen Verschwendung und Zusatzreinigung, wenn GN-Behälter kippen — Frust und ein unprofessioneller Eindruck inklusive. Die Branche \"lebt einfach damit\"."
     },
     "solution": {
       "title": "Klickschienen, die bleiben wo sie sollen",
-      "body": "FitGN Rail rüstet jedes GN-Becken mit mechanisch verriegelnden Edelstahlschienen nach. Die Klick-Geometrie widersteht Vibrationen, hält Behälter plan und lässt sich abends in einem Schritt entfernen — ganz ohne Bohren, Kleben oder Sonderanfertigungen."
+      "body": "FitGN Rail rüstet jedes GN-Becken mit mechanisch verriegelnden Edelstahlschienen nach. Die Klickgeometrie widersteht Vibrationen, hält Behälter plan und lässt sich für die Reinigung in einem Schritt entnehmen — kein Bohren, kein Kleben, einfach klicken und fertig."
     },
     "features": [
-      { "title": "Modulares GN-Layout", "text": "Kombinieren Sie Schienen von GN 1/1 bis GN 1/9 und spiegeln Sie jede Mise-en-place ohne Sonderbau." },
-      { "title": "Steife Edelstahlprofile", "text": "Verstärkte Profile vermeiden Durchbiegung über breite Becken, damit Behälter nicht wackeln." },
-      { "title": "Werkzeuglose Nachrüstung", "text": "Einsetzen, verriegeln, nach dem Service herausheben — in wenigen Sekunden erledigt." }
+      { "title": "Modulares GN-Layout", "text": "Kombinieren Sie Schienen von GN 1/1 bis GN 1/9 und spiegeln Sie jede Mise-en-place ohne Sonderanfertigung." },
+      { "title": "Steife Edelstahlprofile", "text": "Schienen bleiben stabil, sodass Behälter nicht wackeln und jedes Becken sauber aussieht." },
+      { "title": "Werkzeuglose Nachrüstung", "text": "Einsetzen, verriegeln, für die Reinigung in Sekunden wieder entnehmen." }
     ],
     "lineup": {
       "title": "Ein Baukasten für jede Gastronorm-Öffnung",
-      "body": "Wählen Sie die benötigten Segmente, klicken Sie sie zusammen und Sie erhalten ein verriegeltes Raster passend zum aktuellen Menü — Layouts wechseln so schnell wie Behälter.",
+      "body": "Wählen Sie die benötigten Segmente, klicken Sie sie zusammen und Sie erhalten ein verriegeltes Raster passend zu Ihrem Menü — Layouts wechseln so schnell wie Behälter.",
       "sizes": [
-        { "title": "GN 1/1", "text": "Überspannt das gesamte Becken und bildet das Rückgrat für breite Bain-Maries." },
-        { "title": "GN 1/2", "text": "Verstärkt gemischte 1/2- und 1/4-Layouts ohne nachzugeben oder zu schwingen." },
-        { "title": "GN 1/3", "text": "Brückt Saladetten für Dreierbahnen und stabilisiert höhere Einsätze." },
-        { "title": "GN 1/4", "text": "Schließt Lücken für Garnitur- oder Dessertlinien mit kompakten Behältern." },
-        { "title": "GN 1/6", "text": "Fixiert schmale Saucen- und Toppingbehälter, damit nichts kippt." },
-        { "title": "GN 1/9", "text": "Vervollständigt Mise-en-place mit vielen kleinen Portionen — ideal für Condiments und Mise-Cups." }
+        { "title": "GN 1/1", "text": "Überspannt das gesamte Becken und bildet das Rückgrat für breite Bain-Maries oder Saladetten." },
+        { "title": "GN 1/2 · 1/3 · 1/4 · 1/6 · 1/9", "text": "Die kleineren Schienen rasten in das 1/1-Rückgrat ein und sorgen für passgenaue Öffnungen — jede Kombination sitzt ohne Durchbiegen." }
       ]
     },
     "about": {
       "title": "Geboren aus einem Küchenproblem",
-      "body": "<strong>Koen Mortier</strong> betreibt seit über zehn Jahren die <strong>Fitchen</strong>-Restaurants und kennt den GN-Frust aus dem Alltag. Nach jahrelanger Suche in ganz Europa – zuletzt auf Lieferantentour im November 2025 – lautete die Antwort stets: Es gibt nichts, Küchen \"arrangieren sich damit\". <strong>Pauline De Schepper</strong>, Hospitality-Studentin und Teil des täglichen Teams, hatte genug von wegrutschenden Behältern. Gemeinsam entwickelten sie FitGN Rail, damit belgische Küchen ihre Mise endlich sichern können.",
-      "proofPoints": [
-        "Über 10 Jahre Fitchen-Erfahrung an mehreren Standorten definieren Toleranzen und Hygiene-Details.",
-        "Hunderte Stunden Nachjustieren führten zur Klickgeometrie, die heute starr hält.",
-        "Tägliche Tests in Gent, bevor Partner starten — besteht sie dort den Samstag, besteht sie ihn auch bei Ihnen."
-      ]
+      "body": "<strong>Koen Mortier</strong> betreibt seit über zehn Jahren die <strong>Fitchen</strong>-Restaurants und kennt den GN-Frust aus dem Alltag. Nach jahrelanger Suche weltweit nach einer fertigen Lösung lautete die Antwort stets: Es gibt nichts, Küchen \"arrangieren sich damit\". <strong>Pauline De Schepper</strong>, Ihre direkte Ansprechpartnerin und Studentin, die bei Fitchen mitarbeitet, erlebt dieses Problem ebenfalls in jeder Schicht. Gemeinsam entwickelten sie FitGN Rail, um es in den eigenen Küchen zu lösen und anderen zur Verfügung zu stellen."
     },
     "how": {
       "title": "So funktioniert's",
       "steps": [
-        { "n": "1", "title": "Basis einsetzen", "text": "Setzen Sie die flache Basis in das GN-Becken — ohne Schrauben oder Klebstoffe." },
+        { "n": "1", "title": "Basis einsetzen", "text": "Setzen Sie die flache GN 1/1-Basis in die Öffnung der Arbeitsfläche — ohne Schrauben oder Klebstoffe." },
         { "n": "2", "title": "Schienen verriegeln", "text": "Schieben Sie jede Schiene, bis sie mit der Nachbarschiene einrastet. Das Raster richtet sich selbst aus und bleibt steif." },
-        { "n": "3", "title": "Service & Reinigung", "text": "Behälter im laufenden Betrieb wechseln. Nach dem Service Basis entnehmen; das offene Profil lässt sich schnell spülen und trocknen." }
+        { "n": "3", "title": "Service & Reinigung", "text": "Behälter im laufenden Betrieb wechseln, ohne dass die Schienen verrutschen. Rasten Sie die Segmente zum Spülen aus — sie trocknen schnell." }
       ]
     },
     "flemish": {
       "title": "In Flandern gebaut für kompromisslose Küchen",
-      "body": "FitGN Rail wird in Flandern entwickelt und gefertigt – einer Region mit dichtem Horeca-Netzwerk und ausgeprägter Edelstahl-Kompetenz. \"Made in Flanders\" steht für Präzision und langlebige Verarbeitung.",
+      "body": "FitGN Rail wird in Flandern entwickelt und gefertigt – einer Region mit dichtem Horeca-Netzwerk und ausgeprägter Edelstahl-Kompetenz.",
       "pillars": [
         { "title": "Küchentauglicher Edelstahl", "text": "304/316 Edelstahl, entgratete Kanten und nahtfreie Verbindungen für HACCP-Konformität." },
-        { "title": "Fertigung in Flandern", "text": "Lokale Partner lasern und kanten jede Schiene, damit wir Toleranzen bis zum Millimeter kontrollieren." },
-        { "title": "Zuverlässigkeit als Prinzip", "text": "Schienen werden gegen Vibration und Temperaturschwankungen getestet, damit Teams am Pass Ruhe haben." }
+        { "title": "Fertigung in Flandern", "text": "Lokale Partner lasern und kanten jede Schiene, damit wir Toleranzen bis ins kleinste Detail kontrollieren." },
+        { "title": "Zuverlässigkeit als Prinzip", "text": "Schienen werden gegen Vibration und Temperaturschwankungen getestet, damit Sie sich auf den Service konzentrieren können." }
       ]
     },
     "contact": {
       "title": "Vorbestellung & Updates",
-      "body": "Sichern Sie sich einen Platz auf der FitGN-Rail-Vorbestellliste. Schreiben Sie uns für Pilotinformationen oder Partnerschaften. Ihre direkte Ansprechpartnerin: Pauline De Schepper. Wir antworten in der Regel innerhalb eines Werktags.",
+      "body": "Sichern Sie sich einen Platz auf der FitGN-Rail-Vorbestellliste. Schreiben Sie uns zur Vorbestellung. Ihre direkte Ansprechpartnerin für weitere Fragen: Pauline De Schepper. Wir antworten in der Regel innerhalb eines Werktags.",
       "emailLabel": "E-Mail",
       "emailCta": "E-Mail senden",
       "copyCta": "E-Mail kopieren",
       "copied": "Kopiert!",
       "mailSubject": "Interesse an Vorbestellung — FitGN Rail",
-      "mailBody": "Guten Tag liebes FitGN-Team,%0D%0A%0D%0Aich möchte mich für die Vorbestell-Liste von FitGN Rail anmelden.%0D%0A%0D%0AFirmenname:%0D%0AKontaktperson:%0D%0AGeschätzte Anzahl GN-Schienen:%0D%0ABesondere Anforderungen (Maße/Einsatz):%0D%0A",
+      "mailBody": "Guten Tag liebes FitGN-Team,%0D%0A%0D%0Aich möchte mich für die Vorbestell-Liste von FitGN Rail anmelden.%0D%0A%0D%0AFirmenname:%0D%0A",
       "responseTime": "Antwortzeit",
       "responseText": "Normalerweise innerhalb eines Werktags"
     },
     "cta": {
-      "microcopy": "Entwickelt & gefertigt in Flandern · HACCP-konform · AISI 304/316"
+      "microcopy": "Entwickelt & gefertigt in Flandern · HACCP-konform · AISI 304/316 · Patent pending"
     },
     "footer": {
       "line": "FitGN · Vlaanderenstraat 129 · 9000 Gent · Belgien · USt-IdNr. BE 0707.748.721 · info@fitgn.com"

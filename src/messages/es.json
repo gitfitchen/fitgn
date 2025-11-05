@@ -1,0 +1,71 @@
+{
+  "Home": {
+    "hero": {
+      "title": "FitGN Rail — Rieles Gastronorm modulares con bloqueo",
+      "subtitle": "FitGN Rail es un kit modular de rieles Gastronorm que fija en su lugar las cubetas GN estándar. Coloca los rieles sobre cualquier baño María o saladette, encaja los segmentos y cada abertura queda alineada.",
+      "supporting": "Configura la línea de servicio que necesitas con rieles GN 1/1, 1/2, 1/3, 1/4, 1/6 y 1/9 que se entrelazan en segundos y mantienen su geometría durante el rush.",
+      "ctaPrimary": "Únete a la lista de preventa",
+      "ctaSecondary": "Ver cómo funciona"
+    },
+    "problem": {
+      "title": "Cuando los rieles se mueven, el servicio se ralentiza",
+      "body": "Los rieles Gastronorm sueltos se deslizan, se arquean y generan asimetría. Los equipos pierden tiempo recolocando cubetas, se producen derrames y limpiezas extra cuando las GN se caen, y termina habiendo frustración e imagen poco profesional — todo el mundo simplemente \"se acostumbra\"."
+    },
+    "solution": {
+      "title": "Rieles de clic que no se mueven",
+      "body": "FitGN Rail actualiza cualquier pozo GN con rieles de acero inoxidable que se bloquean mecánicamente. La geometría de clic resiste las vibraciones, mantiene las cubetas niveladas y se retira de un gesto para limpiar — sin taladros, sin adhesivos, solo clic y listo."
+    },
+    "features": [
+      { "title": "Diseño GN modular", "text": "Combina rieles desde GN 1/1 hasta GN 1/9 para reflejar cualquier mise en place sin fabricación a medida." },
+      { "title": "Inox robusto", "text": "Los rieles permanecen rígidos para que las cubetas no tambaleen y cada pozo luzca impecable." },
+      { "title": "Retrofit sin herramientas", "text": "Coloca los rieles, haz clic para fijarlos y retíralos en segundos para limpiarlos." }
+    ],
+    "lineup": {
+      "title": "Un único kit para cada abertura Gastronorm",
+      "body": "Selecciona los segmentos que necesitas, encájalos y obtén una rejilla bloqueada adaptada a tu menú — cambia de configuración tan rápido como cambias de cubetas.",
+      "sizes": [
+        { "title": "GN 1/1", "text": "Abarca toda la abertura y actúa como columna vertebral para baños María o saladettes anchos." },
+        { "title": "GN 1/2 · 1/3 · 1/4 · 1/6 · 1/9", "text": "Los rieles menores se acoplan a la espina 1/1 y crean huecos precisos para cualquier combinación de cubetas — todo encaja sin flexionar." }
+      ]
+    },
+    "about": {
+      "title": "Nacido de un problema de cocina",
+      "body": "<strong>Koen Mortier</strong> lleva más de diez años al frente de los restaurantes <strong>Fitchen</strong> y conoce de primera mano el dolor de los rieles GN. Tras años buscando una solución lista para usar en todo el mundo, todos los proveedores respondieron lo mismo: no existe, las cocinas \"se las arreglan\". <strong>Pauline De Schepper</strong>, tu contacto directo y estudiante que trabaja turnos en Fitchen, se enfrenta al mismo problema cada servicio. Juntos diseñaron FitGN Rail para resolverlo en sus propias cocinas y poner la solución al alcance de otros."
+    },
+    "how": {
+      "title": "Cómo funciona",
+      "steps": [
+        { "n": "1", "title": "Base insertable", "text": "Coloca la base GN 1/1 de perfil bajo en la abertura del mostrador — sin tornillos ni adhesivos." },
+        { "n": "2", "title": "Haz clic en los rieles", "text": "Desliza cada riel hasta que se bloquee con su vecino. La rejilla se alinea sola y permanece rígida." },
+        { "n": "3", "title": "Servicio y limpieza", "text": "Cambia cubetas a toda velocidad sin que los rieles se muevan. Suelta los segmentos para enjuagarlos — se secan enseguida." }
+      ]
+    },
+    "flemish": {
+      "title": "Fabricado en Flandes para cocinas exigentes",
+      "body": "FitGN Rail se diseña y fabrica en Flandes, donde la densidad horeca y la experiencia en acero inoxidable elevan el listón.",
+      "pillars": [
+        { "title": "Inox grado cocina", "text": "Acero 304/316, cantos desbarbados y uniones sin soldadura para cumplir con HACCP." },
+        { "title": "Producción flamenca", "text": "Socios locales cortan y doblan cada riel con láser para controlar las tolerancias al mínimo detalle." },
+        { "title": "Fiabilidad desde el diseño", "text": "Los rieles se prueban frente a vibraciones y ciclos térmicos para que tú te centres en el servicio." }
+      ]
+    },
+    "contact": {
+      "title": "Preventa y novedades",
+      "body": "Sé de los primeros en recibir FitGN Rail. Escríbenos para unirte a la lista de preventa. Para cualquier otra consulta, contacta directamente con Pauline De Schepper. Solemos responder en un día laborable.",
+      "emailLabel": "Correo",
+      "emailCta": "Escríbenos",
+      "copyCta": "Copiar correo",
+      "copied": "¡Copiado!",
+      "mailSubject": "Interés en la preventa — FitGN Rail",
+      "mailBody": "Hola equipo FitGN,%0D%0A%0D%0AMe gustaría apuntarme a la preventa de FitGN Rail.%0D%0A%0D%0AEmpresa:%0D%0A",
+      "responseTime": "Tiempo de respuesta",
+      "responseText": "Normalmente en un día laborable"
+    },
+    "cta": {
+      "microcopy": "Diseñado y fabricado en Flandes · Conforme HACCP · AISI 304/316 · Patente en trámite"
+    },
+    "footer": {
+      "line": "FitGN · Vlaanderenstraat 129 · 9000 Gent · Bélgica · IVA BE 0707.748.721 · info@fitgn.com"
+    }
+  }
+}

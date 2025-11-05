@@ -212,6 +212,7 @@ export default function Home() {
             <option value="nl">NL</option>
             <option value="de">DE</option>
             <option value="fr">FR</option>
+            <option value="es">ES</option>
           </select>
         </div>
       </header>

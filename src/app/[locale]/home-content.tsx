@@ -69,9 +69,39 @@ type FeatureProps = {
   text: string;
 };
 
+type RailSizeProps = {
+  title: string;
+  text: string;
+};
+
+type PillarProps = {
+  title: string;
+  text: string;
+};
+
 function Feature({ title, text }: FeatureProps) {
   return (
     <div className="flex flex-col gap-2 rounded-xl border border-white/10 bg-white/[0.04] p-5">
+      <h3 className="text-lg font-semibold text-white">{title}</h3>
+      <p className="text-sm leading-relaxed text-white/70">{text}</p>
+    </div>
+  );
+}
+
+function RailSize({ title, text }: RailSizeProps) {
+  return (
+    <div className="flex flex-col gap-2 rounded-2xl border border-white/15 bg-white/[0.02] p-6">
+      <span className="text-sm font-medium uppercase tracking-[0.3em] text-white/40">
+        {title}
+      </span>
+      <p className="text-base leading-relaxed text-white/70">{text}</p>
+    </div>
+  );
+}
+
+function Pillar({ title, text }: PillarProps) {
+  return (
+    <div className="flex flex-col gap-2 rounded-2xl border border-white/10 bg-white/[0.03] p-6">
       <h3 className="text-lg font-semibold text-white">{title}</h3>
       <p className="text-sm leading-relaxed text-white/70">{text}</p>
     </div>
@@ -137,9 +167,29 @@ export default function Home() {
   const home = messages.Home as unknown as {
     features?: Array<{ title: string; text: string }>;
     how?: { steps?: Array<{ n: string; title: string; text: string }> };
+    lineup?: {
+      title?: string;
+      body?: string;
+      sizes?: Array<{ title: string; text: string }>;
+    };
+    flemish?: {
+      title?: string;
+      body?: string;
+      pillars?: Array<{ title: string; text: string }>;
+    };
+    about?: {
+      proofPoints?: string[];
+    };
   };
   const features = Array.isArray(home?.features) ? home.features : [];
   const howSteps = Array.isArray(home?.how?.steps) ? home.how.steps : [];
+  const lineup = home?.lineup;
+  const lineupSizes = Array.isArray(lineup?.sizes) ? lineup.sizes : [];
+  const flemish = home?.flemish;
+  const flemishPillars = Array.isArray(flemish?.pillars) ? flemish.pillars : [];
+  const proofPoints = Array.isArray(home?.about?.proofPoints)
+    ? home.about?.proofPoints
+    : [];
 
   return (
     <div className={`${inter.className} min-h-screen bg-black text-white`}>
@@ -180,6 +230,9 @@ export default function Home() {
             </h1>
             <p className="text-lg leading-relaxed text-white/70">
               {t("hero.subtitle")}
+            </p>
+            <p className="text-base leading-relaxed text-white/60">
+              {t("hero.supporting")}
             </p>
             <div className="flex flex-col gap-4 sm:flex-row sm:items-center">
               <a
@@ -239,6 +292,27 @@ export default function Home() {
           </div>
         </section>
 
+        {/* Rail Size Section */}
+        {(lineup?.title || lineupSizes.length > 0) && (
+          <section id="lineup" className="space-y-8">
+            <div className="space-y-4">
+              {lineup?.title && (
+                <h2 className="text-3xl font-semibold">{lineup.title}</h2>
+              )}
+              {lineup?.body && (
+                <p className="text-base leading-relaxed text-white/70">
+                  {lineup.body}
+                </p>
+              )}
+            </div>
+            <div className="grid gap-6 md:grid-cols-3">
+              {lineupSizes.map((size, idx) => (
+                <RailSize key={idx} title={size.title} text={size.text} />
+              ))}
+            </div>
+          </section>
+        )}
+
         {/* Detail Section */}
         <section id="detail" className="border-t border-white/10 py-16">
           <div className="mx-auto max-w-6xl px-4">
@@ -255,6 +329,29 @@ export default function Home() {
           </div>
         </section>
 
+        {/* Flemish Quality Section */}
+        {(flemish?.title || flemish?.body) && (
+          <section id="craft" className="space-y-8 rounded-3xl border border-white/10 bg-white/[0.03] p-10">
+            <div className="space-y-4">
+              {flemish?.title && (
+                <h2 className="text-3xl font-semibold">{flemish.title}</h2>
+              )}
+              {flemish?.body && (
+                <p className="text-base leading-relaxed text-white/70">
+                  {flemish.body}
+                </p>
+              )}
+            </div>
+            {flemishPillars.length > 0 && (
+              <div className="grid gap-6 md:grid-cols-3">
+                {flemishPillars.map((pillar, idx) => (
+                  <Pillar key={idx} title={pillar.title} text={pillar.text} />
+                ))}
+              </div>
+            )}
+          </section>
+        )}
+
         {/* About Section */}
         <section id="about" className="space-y-6">
           <h2 className="text-3xl font-semibold">{t("about.title")}</h2>
@@ -263,6 +360,19 @@ export default function Home() {
               strong: (chunks) => <strong>{chunks}</strong>,
             })}
           </p>
+          {proofPoints.length > 0 && (
+            <ul className="grid gap-3 text-sm text-white/70 sm:grid-cols-2">
+              {proofPoints.map((point, idx) => (
+                <li
+                  key={idx}
+                  className="flex items-start gap-3 rounded-xl border border-white/10 bg-white/[0.02] p-4"
+                >
+                  <span className="mt-1 h-2 w-2 shrink-0 rounded-full bg-white/60" />
+                  <span className="leading-relaxed">{point}</span>
+                </li>
+              ))}
+            </ul>
+          )}
         </section>
 
         {/* How It Works Section */}

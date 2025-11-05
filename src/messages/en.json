@@ -1,39 +1,66 @@
 {
   "Home": {
     "hero": {
-      "title": "FitGN Rail — Locking Gastronorm rails",
-      "subtitle": "Professional GN rail systems built in Belgium. Keep every GN pan where it belongs. FitGN Rail locks rails in bain-maries and saladettes so chefs stay focused on service — not on reseating hardware mid-rush.",
+      "title": "FitGN Rail — Modular locking Gastronorm rails",
+      "subtitle": "FitGN Rail is a modular kit of thick-gauge stainless rails that locks standard GN pans in place. Lay the rails over any bain-marie or saladette, click the segments together, and every opening stays aligned — no flex, no rattle.",
+      "supporting": "Build the exact service grid you need with GN 1/1, 1/2, 1/3, 1/4, 1/6, and 1/9 rails that interlock in seconds and hold their geometry through the rush.",
       "ctaPrimary": "Join the pre-order list",
       "ctaSecondary": "See how it works"
     },
     "problem": {
       "title": "When rails slip, service slows",
-      "body": "Standard Gastronorm rails sit loose in bain-maries and saladettes. Each ladle bump or fast pan swap nudges them out of alignment, breaks cold chains, and forces constant resets. Tape peels off after a few washes. Result: crooked pans, inconsistent presentation, and seconds lost every service."
+      "body": "Loose Gastronorm rails slide, bow, and clatter with every ladle bump. Kitchens waste minutes reseating pans, risk broken cold chains, and end up with inconsistent presentation. Makeshift fixes like tape or silicone wedges fail after a few washes — everyone simply \"lives with it.\""
     },
     "solution": {
-      "title": "Locking or magnetic — your choice",
-      "body": "FitGN Rail retrofits existing wells with either a mechanical click-lock or a high-grip magnetic option. Both deliver a tight, repeatable rail position from prep to close without drilling permanent holes."
+      "title": "Click-lock rails that stay put",
+      "body": "FitGN Rail retrofits any GN well with stainless rails that mechanically lock together. The click geometry resists vibration, keeps trays perfectly level, and lifts out for nightly cleaning — no drilling, adhesives, or custom wells."
     },
     "features": [
-      { "title": "Universal drop-in base", "text": "Fits GN 1/1 and GN 2/1 openings; no cutting, no welding." },
-      { "title": "Service-proof stability", "text": "Rails stay put through hard service — no more rattling or mid-rush realignment." },
-      { "title": "Hygienic by design", "text": "AISI 304/316 stainless contact surfaces, smooth edges, easy to remove and clean." }
+      { "title": "Modular GN layout", "text": "Combine GN 1/1 down to GN 1/9 rails to mirror any mise en place without custom fabrication." },
+      { "title": "Rigid thick-gauge inox", "text": "Oversized profiles resist bending across wide wells so pans never develop a wobble." },
+      { "title": "Tool-less retrofit", "text": "Drop the rails in, click them tight, and lift them out for nightly cleaning in seconds." }
     ],
+    "lineup": {
+      "title": "One kit, every Gastronorm opening",
+      "body": "Select the rail segments you need, click them together, and you have a locked grid tailored to today’s menu — swap layouts as fast as you swap pans.",
+      "sizes": [
+        { "title": "GN 1/1", "text": "Spans the full well to form the structural backbone for wide bain-marie openings." },
+        { "title": "GN 1/2", "text": "Pairs with 1/1 segments to anchor mixed 1/2 and 1/4 lineups without flexing." },
+        { "title": "GN 1/3", "text": "Bridges saladette wells for trio pan runs and stabilises taller inserts." },
+        { "title": "GN 1/4", "text": "Fills the gaps for hot garnish wells or dessert lines with compact trays." },
+        { "title": "GN 1/6", "text": "Locks narrow sauce and topping pans in place so nothing tilts during service." },
+        { "title": "GN 1/9", "text": "Finishes the grid for prep-heavy lines — perfect for condiments and mise cups." }
+      ]
+    },
     "about": {
       "title": "Born from a kitchen problem",
-      "body": "In our own restaurant <strong>Fitchen</strong> in Gent, we were tired of GN rails that slipped every service. One night, founder <strong>Koen Mortier</strong> sketched a lockable version on a prep ticket. Together with <strong>Pauline De Schepper</strong>, who runs daily operations, that sketch became <strong>FitGN Rail</strong> — the first system that keeps every Gastronorm tray locked, level, and HACCP-safe."
+      "body": "<strong>Koen Mortier</strong> has operated <strong>Fitchen</strong> restaurants for over a decade and knows the GN struggle firsthand. After years of searching across Europe — including the latest supplier tour in November 2025 — every answer was the same: there is no solution, kitchens just “live with it.” <strong>Pauline De Schepper</strong>, a hospitality management student who spends her spare time on the line, was equally tired of chasing runaway pans. Together they designed the FitGN Rail so Belgian kitchens can finally lock their mise en place.",
+      "proofPoints": [
+        "10+ years of multi-site Fitchen service informs every tolerance and hygiene detail.",
+        "Hundreds of hours lost to reseating GN strips inspired the click geometry that now holds firm.",
+        "Tested daily in Gent before partner pilots — if it survives a Saturday rush there, it will in yours."
+      ]
     },
     "how": {
       "title": "How it works",
       "steps": [
         { "n": "1", "title": "Drop-in base", "text": "Set the low-profile base into the GN well — no screws, no adhesives." },
-        { "n": "2", "title": "Click the rails", "text": "Slide each rail until you feel the lock (or magnetic engagement). Everything stays aligned." },
+        { "n": "2", "title": "Click the rails", "text": "Slide each rail until it locks with its neighbour. The grid aligns itself and stays rigid." },
         { "n": "3", "title": "Service & clean", "text": "Swap pans at speed. Lift the base after service; the open profile rinses and dries fast." }
+      ]
+    },
+    "flemish": {
+      "title": "Flemish-built for relentless service",
+      "body": "FitGN Rail is engineered and fabricated in Flanders, where dense horeca networks and stainless expertise set a high bar. We treat \"Made in Flanders\" as a mark of precision workmanship.",
+      "pillars": [
+        { "title": "Kitchen-grade inox", "text": "304/316 stainless throughout, deburred edges, and weldless joints to meet HACCP standards." },
+        { "title": "Fabricated in Flanders", "text": "Local partners laser-cut and form every rail so we control tolerances down to the millimetre." },
+        { "title": "Reliability by design", "text": "Rails are stress-tested against vibration and heat cycles so chefs focus on service, not hardware." }
       ]
     },
     "contact": {
       "title": "Pre-order & Updates",
-      "body": "Be first in line for FitGN Rail. Join our pre-order list and we'll keep you posted on availability and pilot opportunities. Your contact at FitGN: Pauline De Schepper (General Manager). We usually reply within one business day.",
+      "body": "Be first in line for FitGN Rail. Email us to join the pre-order list, request pilot details, or start a partner conversation. Your direct contact: Pauline De Schepper. We usually reply within one business day.",
       "emailLabel": "Email",
       "emailCta": "Email us",
       "copyCta": "Copy email",
@@ -44,7 +71,7 @@
       "responseText": "Usually within one business day"
     },
     "cta": {
-      "microcopy": "HACCP-minded · AISI 304/316 · Pilot kitchens in BE/NL"
+      "microcopy": "Designed & built in Flanders · HACCP-minded · AISI 304/316"
     },
     "footer": {
       "line": "FitGN · Vlaanderenstraat 129 · 9000 Gent · Belgium · VAT BE 0707.748.721 · info@fitgn.com"

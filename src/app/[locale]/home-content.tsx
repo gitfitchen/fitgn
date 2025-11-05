@@ -196,10 +196,10 @@ export default function Home() {
       <header className="border-b border-white/10 bg-black/80">
         <div className="mx-auto flex max-w-6xl items-center justify-between gap-4 px-6 py-6 lg:px-8">
           <Image
-            src="/logo.png"
+            src="/logo-trimmed.png"
             alt="FitGN logo"
-            width={120}
-            height={40}
+            width={140}
+            height={38}
             className="opacity-90"
           />
           <select

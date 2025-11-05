@@ -1,0 +1,71 @@
+{
+  "Home": {
+    "hero": {
+      "title": "FitGN Rail — Rotaie Gastronorm modulari con blocco",
+      "subtitle": "FitGN Rail è un kit modulare di rotaie Gastronorm che blocca i contenitori GN standard. Posiziona le rotaie su qualsiasi bagnomaria o saladette, incastra i segmenti e ogni apertura resta perfettamente allineata.",
+      "supporting": "Configura la linea di servizio di cui hai bisogno con rotaie GN 1/1, 1/2, 1/3, 1/4, 1/6 e 1/9 che si agganciano in pochi secondi e mantengono la geometria durante il servizio.",
+      "ctaPrimary": "Unisciti alla lista di pre-ordine",
+      "ctaSecondary": "Scopri come funziona"
+    },
+    "problem": {
+      "title": "Quando le rotaie slittano, il servizio rallenta",
+      "body": "Le rotaie Gastronorm allentate scivolano, si flettono e creano asimmetrie. Le brigate perdono tempo a riallineare i contenitori, aumentano gli sprechi e le pulizie quando le GN cadono, con frustrazione e un aspetto poco professionale — tutti semplicemente \"ci convivono\"."
+    },
+    "solution": {
+      "title": "Rotaie a scatto che restano al loro posto",
+      "body": "FitGN Rail aggiorna qualsiasi pozzo GN con rotaie in acciaio inox che si bloccano meccanicamente. La geometria a scatto resiste alle vibrazioni, mantiene i contenitori in bolla e si rimuove con un gesto per la pulizia — niente fori, niente colle, basta un clic."
+    },
+    "features": [
+      { "title": "Layout GN modulare", "text": "Combina rotaie da GN 1/1 fino a GN 1/9 per replicare qualsiasi mise en place senza lavorazioni su misura." },
+      { "title": "Acciaio spesso e rigido", "text": "Le rotaie restano rigide così i contenitori non oscillano e ogni pozzo appare impeccabile." },
+      { "title": "Retrofit senza attrezzi", "text": "Appoggia le rotaie, agganciale con un clic e rimuovile in pochi secondi per lavarle." }
+    ],
+    "lineup": {
+      "title": "Un kit unico per ogni apertura Gastronorm",
+      "body": "Seleziona i segmenti necessari, incastrali e ottieni una griglia bloccata su misura per il tuo menu — cambia configurazione veloce quanto cambi le vaschette.",
+      "sizes": [
+        { "title": "GN 1/1", "text": "Copro tutta l’apertura e fa da spina dorsale per bagnomaria o saladette di grande ampiezza." },
+        { "title": "GN 1/2 · 1/3 · 1/4 · 1/6 · 1/9", "text": "Le rotaie più piccole si agganciano alla spina 1/1 e creano alloggi perfetti per qualsiasi combinazione — tutto si blocca senza flettersi." }
+      ]
+    },
+    "about": {
+      "title": "Nato da un problema di cucina",
+      "body": "<strong>Koen Mortier</strong> gestisce i ristoranti <strong>Fitchen</strong> da oltre dieci anni e conosce bene il problema dei riel GN. Dopo anni di ricerca globale di una soluzione pronta all’uso, la risposta era sempre la stessa: non esiste, le cucine \"se la cavano\". <strong>Pauline De Schepper</strong>, la tua referente diretta e studentessa che lavora nei locali Fitchen, affronta lo stesso problema a ogni servizio. Insieme hanno progettato FitGN Rail per risolverlo nelle loro cucine e offrirlo ad altri."
+    },
+    "how": {
+      "title": "Come funziona",
+      "steps": [
+        { "n": "1", "title": "Base a inserto", "text": "Posiziona la base GN 1/1 a basso profilo nell’apertura del piano — senza viti né adesivi." },
+        { "n": "2", "title": "Aggancia le rotaie", "text": "Fai scorrere ogni rotaia finché non scatta con la successiva. La griglia si allinea da sola e resta rigida." },
+        { "n": "3", "title": "Servizio e pulizia", "text": "Cambia vaschette rapidamente senza che le rotaie si muovano. Sgancia i segmenti per risciacquarli — si asciugano subito." }
+      ]
+    },
+    "flemish": {
+      "title": "Prodotto in Fiandre per cucine esigenti",
+      "body": "FitGN Rail è progettato e realizzato nelle Fiandre, dove la fitta rete horeca e l’esperienza nell’acciaio inox alzano l’asticella.",
+      "pillars": [
+        { "title": "Acciaio grado cucina", "text": "Acciaio 304/316, spigoli smussati e giunzioni senza saldature per rispettare l’HACCP." },
+        { "title": "Produzione fiamminga", "text": "Partner locali tagliano e piegano ogni rotaia a laser per controllare le tolleranze al minimo dettaglio." },
+        { "title": "Affidabilità progettuale", "text": "Le rotaie sono testate contro vibrazioni e sbalzi termici così tu puoi concentrarti sul servizio." }
+      ]
+    },
+    "contact": {
+      "title": "Pre-ordine e aggiornamenti",
+      "body": "Sii tra i primi a ricevere FitGN Rail. Scrivici per entrare nella lista di pre-ordine. Per qualsiasi altra domanda, contatta direttamente Pauline De Schepper. Rispondiamo di solito entro un giorno lavorativo.",
+      "emailLabel": "Email",
+      "emailCta": "Scrivici",
+      "copyCta": "Copia email",
+      "copied": "Copiato!",
+      "mailSubject": "Interesse per il pre-ordine — FitGN Rail",
+      "mailBody": "Ciao team FitGN,%0D%0A%0D%0Avorrei iscrivermi al pre-ordine di FitGN Rail.%0D%0A%0D%0AAzienda:%0D%0A",
+      "responseTime": "Tempo di risposta",
+      "responseText": "Di solito entro un giorno lavorativo"
+    },
+    "cta": {
+      "microcopy": "Progettato e prodotto nelle Fiandre · Conforme HACCP · AISI 304/316 · Brevetto in corso"
+    },
+    "footer": {
+      "line": "FitGN · Vlaanderenstraat 129 · 9000 Gent · Belgio · Partita IVA BE 0707.748.721 · info@fitgn.com"
+    }
+  }
+}

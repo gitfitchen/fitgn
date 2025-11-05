@@ -2,76 +2,67 @@
   "Home": {
     "hero": {
       "title": "FitGN Rail — Rails Gastronorm modulaires verrouillables",
-      "subtitle": "FitGN Rail est un ensemble modulaire de rails en inox épais qui verrouille vos bacs GN. Posez les rails sur un bain-marie ou une saladette, clipsez les segments et chaque ouverture reste alignée — sans torsion ni cliquetis.",
+      "subtitle": "FitGN Rail est un kit modulaire de rails Gastronorm qui verrouille les bacs GN standards. Posez les rails sur un bain-marie ou une saladette, clipsez les segments et chaque ouverture reste alignée.",
       "supporting": "Composez exactement la trame de service dont vous avez besoin avec les rails GN 1/1, 1/2, 1/3, 1/4, 1/6 et 1/9 qui s’assemblent en quelques secondes et gardent leur géométrie pendant le coup de feu.",
       "ctaPrimary": "S'inscrire à la liste d'attente",
       "ctaSecondary": "Voir comment cela fonctionne"
     },
     "problem": {
       "title": "Quand les rails glissent, le service ralentit",
-      "body": "Des rails Gastronorm lâches glissent, se voilent et claquent à chaque geste. Les équipes perdent des minutes à tout remettre en place, compromise la chaîne du froid et obtiennent une présentation inconstante. Les rustines — ruban, cales silicone — ne survivent qu’à quelques lavages : tout le monde \"fait avec\"."
+      "body": "Des rails Gastronorm lâches glissent, se voilent et créent une asymétrie. Les équipes perdent du temps à repositionner les bacs, provoquent des renversements et du nettoyage supplémentaire quand les bacs tombent — frustration et image peu professionnelle à la clé. Tout le monde \"fait avec\"."
     },
     "solution": {
       "title": "Des rails à clic qui ne bougent plus",
-      "body": "FitGN Rail modernise n’importe quelle cuve GN avec des rails inox qui se verrouillent mécaniquement. La géométrie d’emboîtement absorbe les vibrations, garde les bacs parfaitement à niveau et se retire en fin de service — sans perçage, colle ni fabrication sur mesure."
+      "body": "FitGN Rail modernise n’importe quelle cuve GN avec des rails inox qui se verrouillent mécaniquement. La géométrie d’emboîtement absorbe les vibrations, garde les bacs parfaitement à niveau et s’enlève en un geste pour le nettoyage — sans perçage, sans colle, juste un clic et c’est fait."
     },
     "features": [
       { "title": "Trame GN modulaire", "text": "Combinez des rails du GN 1/1 au GN 1/9 pour reproduire toute mise en place sans fabrication spéciale." },
-      { "title": "Profils inox rigides", "text": "Des sections épaisses empêchent toute flexion sur les larges cuves ; les bacs ne vacillent plus." },
-      { "title": "Retrofit sans outil", "text": "Déposez, clipsez, retirez — tout se fait en quelques secondes, même au milieu du service." }
+      { "title": "Profils inox rigides", "text": "Les rails restent rigides pour que les bacs ne vacillent pas et que chaque cuve paraisse impeccable." },
+      { "title": "Retrofit sans outil", "text": "Déposez, clipsez, retirez pour le nettoyage — le tout en quelques secondes." }
     ],
     "lineup": {
       "title": "Un kit, toutes les ouvertures Gastronorm",
-      "body": "Choisissez les segments nécessaires, assemblez-les et obtenez une trame verrouillée adaptée au menu du jour — changez de configuration aussi vite que de bacs.",
+      "body": "Choisissez les segments nécessaires, assemblez-les et obtenez une trame verrouillée adaptée à votre menu — changez de configuration aussi vite que de bacs.",
       "sizes": [
-        { "title": "GN 1/1", "text": "Traverse toute la cuve et sert de colonne vertébrale aux bains-marie larges." },
-        { "title": "GN 1/2", "text": "Stabilise les combinaisons 1/2 et 1/4 sans fléchir ni vibrer." },
-        { "title": "GN 1/3", "text": "Relie les saladettes pour trois bacs alignés et sécurise les inserts plus hauts." },
-        { "title": "GN 1/4", "text": "Ferme les interstices des lignes garniture ou dessert avec des bacs compacts." },
-        { "title": "GN 1/6", "text": "Bloque les bacs étroits pour sauces et toppings afin qu’ils ne basculent plus." },
-        { "title": "GN 1/9", "text": "Complète les mises en place riches en condiments — parfait pour les petites portions." }
+        { "title": "GN 1/1", "text": "Traverse toute la cuve et sert de colonne vertébrale aux bains-marie ou saladettes larges." },
+        { "title": "GN 1/2 · 1/3 · 1/4 · 1/6 · 1/9", "text": "Les rails plus petits s’enclenchent dans la colonne 1/1 pour créer des ouvertures précises — aucune flexion, toutes les combinaisons tiennent." }
       ]
     },
     "about": {
       "title": "Né d'un problème de cuisine",
-      "body": "<strong>Koen Mortier</strong> dirige les restaurants <strong>Fitchen</strong> depuis plus de dix ans et vit ce problème GN au quotidien. Après des années de recherches en Europe — dont une nouvelle tournée fournisseurs en novembre 2025 — la réponse restait la même : rien n’existe, \"on fait avec\". <strong>Pauline De Schepper</strong>, étudiante en gestion hôtelière et régulière sur la ligne, en avait tout autant assez de courir après les bacs. Ensemble, ils ont conçu FitGN Rail pour offrir enfin une solution aux cuisines belges.",
-      "proofPoints": [
-        "Plus de 10 ans de service multi-sites chez Fitchen guident chaque tolérance et détail d’hygiène.",
-        "Des centaines d’heures perdues à réajuster les rails ont inspiré une géométrie de clips qui ne lâche plus.",
-        "Testé quotidiennement à Gand avant d’ouvrir les pilotes — si cela tient un samedi là-bas, cela tiendra chez vous."
-      ]
+      "body": "<strong>Koen Mortier</strong> dirige les restaurants <strong>Fitchen</strong> depuis plus de dix ans et vit ce problème GN au quotidien. Après des années de recherches dans le monde entier, la réponse restait la même : rien n’existe, \"on fait avec\". <strong>Pauline De Schepper</strong>, votre interlocutrice directe et étudiante employée chez Fitchen, fait face au même souci à chaque service. Ensemble, ils ont conçu FitGN Rail pour résoudre ce problème dans leurs cuisines et en faire profiter les autres."
     },
     "how": {
       "title": "Comment ça marche",
       "steps": [
-        { "n": "1", "title": "Base à poser", "text": "Placez la base à profil bas dans la cuve GN — sans vis ni adhésifs." },
+        { "n": "1", "title": "Base à poser", "text": "Placez la base GN 1/1 à profil bas dans l’ouverture du plan de travail — sans vis ni adhésifs." },
         { "n": "2", "title": "Clipser les rails", "text": "Faites glisser chaque rail jusqu’à son verrouillage avec le voisin. La trame s’aligne et reste rigide." },
-        { "n": "3", "title": "Service & nettoyage", "text": "Changez de bacs à toute vitesse. Retirez la base en fin de service ; le profil ouvert se rince et sèche rapidement." }
+        { "n": "3", "title": "Service & nettoyage", "text": "Changez de bacs à toute vitesse sans que les rails ne bougent. Déclipsez les segments pour les rincer — ils sèchent rapidement." }
       ]
     },
     "flemish": {
       "title": "Fabriqué en Flandre pour des cuisines exigeantes",
-      "body": "FitGN Rail est conçu et fabriqué en Flandre, région de forte densité horeca et d’expertise inox. Pour nous, \"Made in Flanders\" signifie précision, robustesse et constance.",
+      "body": "FitGN Rail est conçu et fabriqué en Flandre, région de forte densité horeca et d’expertise inox.",
       "pillars": [
         { "title": "Inox de grade cuisine", "text": "Acier 304/316, arêtes ébavurées et assemblages sans soudure pour respecter l’HACCP." },
-        { "title": "Production flamande", "text": "Des partenaires locaux découpent laser et plient chaque rail pour maîtriser les tolérances au millimètre." },
-        { "title": "Fiabilité dès la conception", "text": "Des tests de vibration et de cycles thermiques garantissent que l’équipe reste concentrée sur le service." }
+        { "title": "Production flamande", "text": "Des partenaires locaux découpent laser et plient chaque rail pour maîtriser les tolérances dans leurs moindres détails." },
+        { "title": "Fiabilité dès la conception", "text": "Des tests de vibration et de cycles thermiques garantissent que vous restez concentré sur le service." }
       ]
     },
     "contact": {
       "title": "Précommande & mises à jour",
-      "body": "Inscrivez-vous parmi les premiers pour FitGN Rail. Écrivez-nous pour rejoindre la liste, demander un pilote ou lancer un partenariat. Votre contact direct : Pauline De Schepper. Nous répondons généralement sous un jour ouvrable.",
+      "body": "Inscrivez-vous parmi les premiers pour FitGN Rail. Écrivez-nous pour rejoindre la liste de précommande. Pour toute autre demande, contactez directement Pauline De Schepper. Nous répondons généralement sous un jour ouvrable.",
       "emailLabel": "E-mail",
       "emailCta": "Nous écrire",
       "copyCta": "Copier l'e-mail",
       "copied": "Copié !",
       "mailSubject": "Intérêt pour la précommande — FitGN Rail",
-      "mailBody": "Bonjour l'équipe FitGN,%0D%0A%0D%0ANous souhaitons nous inscrire à la liste de précommande pour FitGN Rail.%0D%0A%0D%0AEntreprise :%0D%0AContact :%0D%0ANombre estimé de rails GN :%0D%0ABesoins spécifiques :%0D%0A",
+      "mailBody": "Bonjour l'équipe FitGN,%0D%0A%0D%0ANous souhaitons nous inscrire à la liste de précommande pour FitGN Rail.%0D%0A%0D%0AEntreprise :%0D%0A",
       "responseTime": "Délai de réponse",
       "responseText": "Généralement sous un jour ouvrable"
     },
     "cta": {
-      "microcopy": "Conçu & fabriqué en Flandre · Conforme HACCP · AISI 304/316"
+      "microcopy": "Conçu & fabriqué en Flandre · Conforme HACCP · AISI 304/316 · Patent pending"
     },
     "footer": {
       "line": "FitGN · Vlaanderenstraat 129 · 9000 Gand · Belgique · TVA BE 0707.748.721 · info@fitgn.com"
